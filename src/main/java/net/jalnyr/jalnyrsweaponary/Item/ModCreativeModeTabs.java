@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FROSTSTEEL_SWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_GREATSWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
+                        pOutput.accept(ModItems.RAW_FROSTSTEEL.get());
                     })
                     .build());
 

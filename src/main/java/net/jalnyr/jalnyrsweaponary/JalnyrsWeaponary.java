@@ -3,6 +3,7 @@ package net.jalnyr.jalnyrsweaponary;
 import com.mojang.logging.LogUtils;
 import net.jalnyr.jalnyrsweaponary.Item.ModCreativeModeTabs;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
+import net.jalnyr.jalnyrsweaponary.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -31,8 +32,10 @@ public class JalnyrsWeaponary
         // Register the commonSetup method for modloading
         ModItems.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
-        // Register ourselves for server and other game events we are interested in
+
+
         MinecraftForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
