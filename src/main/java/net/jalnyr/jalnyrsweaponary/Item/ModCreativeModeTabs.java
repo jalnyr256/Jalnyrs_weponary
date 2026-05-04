@@ -19,6 +19,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.jalnyrsweaponary"))
                     .displayItems((pParametres, pOutput) -> {
                         pOutput.accept(ModItems.FROSTSTEEL_SWORD.get());
+                        pOutput.accept(ModItems.FROSTSTEEL_GREATSWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                     })
                     .build());
