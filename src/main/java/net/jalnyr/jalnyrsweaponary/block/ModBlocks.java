@@ -1,7 +1,7 @@
 package net.jalnyr.jalnyrsweaponary.block;
 
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
-import net.jalnyr.jalnyrsweaponary.Item.custom.ModFlammableRotatedPillarBlock;
+import net.jalnyr.jalnyrsweaponary.block.custom.ModFlammableRotatedPillarBlock;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -25,16 +25,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, JalnyrsWeaponary.MOD_ID);
 
     public static final RegistryObject<Block> FROZEN_LOG = registerBlock("frozen_log",
-            ()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3f)));
     public static final RegistryObject<Block> FROZEN_WOOD = registerBlock("frozen_wood",
-            ()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3f)));
     public static final RegistryObject<Block> STRIPPED_FROZEN_LOG = registerBlock("stripped_frozen_log",
-            ()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3f)));
     public static final RegistryObject<Block> STRIPPED_FROZEN_WOOD = registerBlock("stripped_frozen_wood",
-            ()-> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3f)));
 
     public static final RegistryObject<Block> FROZEN_PLANKS = registerBlock("frozen_planks",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -51,7 +51,7 @@ public class ModBlocks {
                 }
             });
     public static final RegistryObject<Block> FROZEN_LEAVES = registerBlock("frozen_leaves",
-            ()-> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)){
                 @Override
                 public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
                     return true;
@@ -67,6 +67,8 @@ public class ModBlocks {
                     return 30;
                 }
             });
+
+
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

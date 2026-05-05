@@ -1,4 +1,4 @@
-package net.jalnyr.jalnyrsweaponary.Item.custom;
+package net.jalnyr.jalnyrsweaponary.block.custom;
 
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.minecraft.core.BlockPos;

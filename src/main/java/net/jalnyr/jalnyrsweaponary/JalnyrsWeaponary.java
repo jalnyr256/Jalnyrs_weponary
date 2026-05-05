@@ -3,6 +3,7 @@ package net.jalnyr.jalnyrsweaponary;
 import com.mojang.logging.LogUtils;
 import net.jalnyr.jalnyrsweaponary.Item.ModCreativeModeTabs;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
+import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.jalnyr.jalnyrsweaponary.loot.ModLootModifiers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +32,7 @@ public class JalnyrsWeaponary
 
         // Register the commonSetup method for modloading
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
