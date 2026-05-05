@@ -1,6 +1,7 @@
 package net.jalnyr.jalnyrsweaponary.Item;
 
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FROSTSTEEL_GREATSWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FROSTSTEEL.get());
+
+                        pOutput.accept(ModBlocks.FROZEN_WOOD.get());
+                        pOutput.accept(ModBlocks.FROZEN_LOG.get());
+                        pOutput.accept(ModBlocks.FROZEN_LEAVES.get());
+                        pOutput.accept(ModBlocks.STRIPPED_FROZEN_WOOD.get());
+                        pOutput.accept(ModBlocks.STRIPPED_FROZEN_LOG.get());
+                        pOutput.accept(ModBlocks.FROZEN_PLANKS.get());
                     })
                     .build());
 
