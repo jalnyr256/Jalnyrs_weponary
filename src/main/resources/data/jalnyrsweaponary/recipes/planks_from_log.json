@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jalnyrsweaponary:frozen_log"
+    }
+  ],
+  "result": {
+    "item": "jalnyrsweaponary:frozen_planks",
+    "count": 4
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jalnyrsweaponary:stripped_frozen_wood"
+    }
+  ],
+  "result": {
+    "item": "jalnyrsweaponary:frozen_planks",
+    "count": 4
+  }
+}

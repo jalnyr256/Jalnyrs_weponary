@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#  ",
+    "#  ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "jalnyrsweaponary:frozen_planks"
+    }
+  },
+    "result": {
+      "item": "jalnyrsweaponary:frozen_stick"
+    }
+}
