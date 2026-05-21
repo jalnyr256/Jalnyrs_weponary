@@ -16,16 +16,18 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JalnyrsWeaponary.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> JALNYRSWEAPONARY = CREATIVE_MODE_TABS.register("jalnyrsweaponary",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.DIAMOND))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.FROSTSTEEL_SWORD.get()))
                     .title(Component.translatable("creativetab.jalnyrsweaponary"))
                     .displayItems((pParametres, pOutput) -> {
                         pOutput.accept(ModItems.FROSTSTEEL_SWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_GREATSWORD.get());
+                        pOutput.accept(ModItems.DUAL_FROSTSTEEL_SWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FROSTSTEEL.get());
                         pOutput.accept(ModItems.FROZEN_STICK.get());
 
                         pOutput.accept(ModBlocks.FROZEN_WOOD.get());
+                        pOutput.accept(ModBlocks.FROSTSTEEL_BLOCK.get());
                         pOutput.accept(ModBlocks.FROZEN_LOG.get());
                         pOutput.accept(ModBlocks.FROZEN_LEAVES.get());
                         pOutput.accept(ModBlocks.STRIPPED_FROZEN_WOOD.get());

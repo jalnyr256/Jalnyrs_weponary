@@ -1,0 +1,72 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "jalnyrsweaponary:item/dual_froststeel_sword3d",
+		"particle": "jalnyrsweaponary:item/dual_froststeel_sword3d"
+	},
+	"elements": [
+		{
+			"from": [7, 6, 9],
+			"to": [9, 12, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 6, 9]},
+			"faces": {
+				"north": {"uv": [3, 9, 4, 12], "texture": "#0"},
+				"east": {"uv": [9, 3, 10, 6], "texture": "#0"},
+				"south": {"uv": [4, 9, 5, 12], "texture": "#0"},
+				"west": {"uv": [5, 9, 6, 12], "texture": "#0"},
+				"up": {"uv": [10, 9, 9, 8], "texture": "#0"},
+				"down": {"uv": [11, 3, 10, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 12, 9],
+			"to": [14, 14, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 12, 9]},
+			"faces": {
+				"north": {"uv": [3, 8, 9, 9], "texture": "#0"},
+				"east": {"uv": [10, 4, 11, 5], "texture": "#0"},
+				"south": {"uv": [9, 0, 15, 1], "texture": "#0"},
+				"west": {"uv": [10, 5, 11, 6], "texture": "#0"},
+				"up": {"uv": [15, 2, 9, 1], "texture": "#0"},
+				"down": {"uv": [15, 2, 9, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2, 14, 9],
+			"to": [6, 30, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 14, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 8], "texture": "#0"},
+				"east": {"uv": [0, 8, 1, 16], "texture": "#0"},
+				"south": {"uv": [2, 0, 4, 8], "texture": "#0"},
+				"west": {"uv": [8, 0, 9, 8], "texture": "#0"},
+				"up": {"uv": [8, 10, 6, 9], "texture": "#0"},
+				"down": {"uv": [11, 6, 9, 7], "texture": "#0"}
+			}
+		},
+		{
+			"from": [10, 14, 9],
+			"to": [14, 30, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [16, 14, 9]},
+			"faces": {
+				"north": {"uv": [4, 0, 6, 8], "texture": "#0"},
+				"east": {"uv": [1, 8, 2, 16], "texture": "#0"},
+				"south": {"uv": [6, 0, 8, 8], "texture": "#0"},
+				"west": {"uv": [2, 8, 3, 16], "texture": "#0"},
+				"up": {"uv": [11, 8, 9, 7], "texture": "#0"},
+				"down": {"uv": [10, 9, 8, 10], "texture": "#0"}
+			}
+		}
+	],
+	"display": {},
+	"groups": [
+		{
+			"name": "froststeel_dual",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

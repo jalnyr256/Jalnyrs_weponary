@@ -26,6 +26,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FROZEN_LOG = registerBlock("frozen_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> FROSTSTEEL_BLOCK = registerBlock("froststeel_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> FROZEN_WOOD = registerBlock("frozen_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> STRIPPED_FROZEN_LOG = registerBlock("stripped_frozen_log",

@@ -3,9 +3,11 @@
   "item.jalnyrsweaponary.raw_froststeel": "Raw Froststeel",
   "item.jalnyrsweaponary.frozen_stick": "Frozen Stick",
   "item.jalnyrsweaponary.froststeel_sword": "Froststeel Sword",
+  "item.jalnyrsweaponary.dual_froststeel_sword": "Dual Froststeel Sword",
   "item.jalnyrsweaponary.froststeel_greatsword": "Froststeel GreatSword",
 
   "block.jalnyrsweaponary.frozen_log": "Frozen Log",
+  "block.jalnyrsweaponary.froststeel_block": "Froststeel Block",
   "block.jalnyrsweaponary.frozen_wood": "Frozen Wood",
   "block.jalnyrsweaponary.stripped_frozen_log": "Stripped Frozen Log",
   "block.jalnyrsweaponary.stripped_frozen_wood": "Stripped Frozen Wood",
