@@ -3,6 +3,7 @@ package net.jalnyr.jalnyrsweaponary.block;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.block.custom.ModFlammableRotatedPillarBlock;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.worldgen.tree.FrozenTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
@@ -11,6 +12,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,8 +30,12 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> FROSTSTEEL_BLOCK = registerBlock("froststeel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+    public static final RegistryObject<Block> FROSTSTEEL_ORE = registerBlock("froststeel_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> FROZEN_WOOD = registerBlock("frozen_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+    public static final RegistryObject<Block> FROZEN_SAPLING = registerBlock("frozen_sapling",
+            () -> new SaplingBlock(new FrozenTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> STRIPPED_FROZEN_LOG = registerBlock("stripped_frozen_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FROZEN_WOOD = registerBlock("stripped_frozen_wood",

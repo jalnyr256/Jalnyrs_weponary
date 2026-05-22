@@ -28,11 +28,13 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModBlocks.FROZEN_WOOD.get());
                         pOutput.accept(ModBlocks.FROSTSTEEL_BLOCK.get());
+                        pOutput.accept(ModBlocks.FROSTSTEEL_ORE.get());
                         pOutput.accept(ModBlocks.FROZEN_LOG.get());
                         pOutput.accept(ModBlocks.FROZEN_LEAVES.get());
                         pOutput.accept(ModBlocks.STRIPPED_FROZEN_WOOD.get());
                         pOutput.accept(ModBlocks.STRIPPED_FROZEN_LOG.get());
                         pOutput.accept(ModBlocks.FROZEN_PLANKS.get());
+                        pOutput.accept(ModBlocks.FROZEN_SAPLING.get());
                     })
                     .build());
 

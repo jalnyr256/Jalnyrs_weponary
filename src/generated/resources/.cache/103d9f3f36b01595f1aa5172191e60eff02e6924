@@ -1,0 +1,5 @@
+// 1.20.1	2026-05-22T13:20:49.219275546	Registries
+767c7138da4c3c218d63782bac32c72bcd3a77d0 data/jalnyrsweaponary/forge/biome_modifier/add_froststeel_ore.json
+ae62814bfd06d9a9718343835fe6450cc7f77219 data/jalnyrsweaponary/worldgen/configured_feature/froststeel_ore.json
+c8221b57059702d5deccd2b659921d67aaffa3ee data/jalnyrsweaponary/worldgen/configured_feature/frozen.json
+b2a68d59329324078525d524a3aaad64bfdaeac4 data/jalnyrsweaponary/worldgen/placed_feature/froststeel_ore_placed.json

@@ -21,5 +21,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     protected void start() {
         add("froststeel_from_plains", new AddItemModifier(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_weaponsmith")).build()}, ModItems.RAW_FROSTSTEEL.get()));
+        add("froststeel_wood_from_plains", new AddItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/village/village_weaponsmith")).build()}, ModItems.FROZEN_STICK.get()));
     }
 }

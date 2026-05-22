@@ -1,3 +1,4 @@
-// 1.20.1	2026-05-04T21:24:35.677192107	Global Loot Modifiers : jalnyrsweaponary
-8bb1eea6e3bb2a1bbdfe52bc7b131240e9525540 data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.1	2026-05-22T11:44:53.870966688	Global Loot Modifiers : jalnyrsweaponary
+b5284e1408422d6052236114f5d4f25fa49d403e data/forge/loot_modifiers/global_loot_modifiers.json
 130fe46e84f29eb51c20640578f2a13be4c5de9f data/jalnyrsweaponary/loot_modifiers/froststeel_from_plains.json
+0a14c2a6d18919cb64eadd2eeea3a7d062145e35 data/jalnyrsweaponary/loot_modifiers/froststeel_wood_from_plains.json
