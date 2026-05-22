@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -31,6 +32,12 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FROSTSTEEL_ORE_KEY = registerKey("froststeel_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_KEY = registerKey("frozen");
+    private static TreeConfiguration.TreeConfigurationBuilder createStraightBlobTree(Block p_195147_, Block p_195148_, int pBaseHeight, int pHeightRandA, int pHeightRandB, int p_195152_) {
+        return new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(p_195147_), new StraightTrunkPlacer(pBaseHeight, pHeightRandA, pHeightRandB), BlockStateProvider.simple(p_195148_), new BlobFoliagePlacer(ConstantInt.of(p_195152_), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1));
+    }
+    private static TreeConfiguration.TreeConfigurationBuilder createFrozen() {
+        return createStraightBlobTree(ModBlocks.FROZEN_LOG.get(), ModBlocks.FROZEN_LEAVES.get(), 4, 2, 0, 2).ignoreVines();
+    }
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -40,13 +47,9 @@ public class ModConfiguredFeatures {
 
         register(context, OVERWORLD_FROSTSTEEL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFroststeelOres, 9));
 
-        register(context, FROZEN_KEY, Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.FROZEN_LOG.get()),
-                new StraightTrunkPlacer(4, 3, 2),
-                BlockStateProvider.simple(ModBlocks.FROZEN_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(4), ConstantInt.of(4), 4),
-                new TwoLayersFeatureSize(1, 0, 3)).build());
+        register(context, FROZEN_KEY, Feature.TREE, createFrozen().build());
     }
+
 
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
