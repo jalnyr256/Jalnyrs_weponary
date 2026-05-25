@@ -11,10 +11,10 @@
       "item": "jalnyrsweaponary:froststeel_block"
     },
     "x": {
-      "item": "minecraft:stick"
+      "item": "jalnyrsweaponary:frozen_stick"
     }
   },
     "result": {
-      "item": "jalnyrsweaponary:froststeel_greatsword"
+      "item": "jalnyrsweaponary:dual_froststeel_sword"
     }
 }
