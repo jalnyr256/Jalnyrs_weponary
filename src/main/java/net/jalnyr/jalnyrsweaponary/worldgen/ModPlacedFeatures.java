@@ -1,5 +1,6 @@
 package net.jalnyr.jalnyrsweaponary.worldgen;
 
+import net.jalnyr.jalnyrsweaponary.Config;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.minecraft.core.Holder;
@@ -27,11 +28,11 @@ public class ModPlacedFeatures {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, FROSTSTEEL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FROSTSTEEL_ORE_KEY),
-                ModOrePlacement.commonOrePlacement(12,
+                ModOrePlacement.commonOrePlacement(2,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
         register(context, FROZEN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FROZEN_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, 1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, Config.frozenTree),
                         ModBlocks.FROZEN_SAPLING.get()));
     }
 
