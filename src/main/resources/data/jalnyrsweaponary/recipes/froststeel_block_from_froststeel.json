@@ -2,19 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "   ",
-    " # ",
-    " x "
+    "###",
+    "###",
+    "###"
   ],
   "key": {
     "#": {
       "item": "jalnyrsweaponary:froststeel_ingot"
-    },
-    "x": {
-      "item": "jalnyrsweaponary:frozen_stick"
     }
   },
     "result": {
-      "item": "jalnyrsweaponary:froststeel_knife"
+      "item": "jalnyrsweaponary:froststeel_block"
     }
 }

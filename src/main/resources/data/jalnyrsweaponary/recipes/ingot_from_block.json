@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "jalnyrsweaponary:froststeel_block"
+    }
+  ],
+  "result": {
+    "item": "jalnyrsweaponary:froststeel_ingot",
+    "count": 9
+  }
+}

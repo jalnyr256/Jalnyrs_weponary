@@ -26,9 +26,9 @@ public class ModItems {
     public static final RegistryObject<Item> FROSTSTEEL_KNIFE = ITEMS.register("froststeel_knife",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 2, -1.6F, new Item.Properties()));
     public static final RegistryObject<Item> FROSTSTEEL_GREATSWORD = ITEMS.register("froststeel_greatsword",
-            ()-> new SwordItem(ModToolTiers.FROSTSTEEL, 9, -3F, new Item.Properties()));
+            ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 9, -3F, new Item.Properties()));
     public static final RegistryObject<Item> DUAL_FROSTSTEEL_SWORD = ITEMS.register("dual_froststeel_sword",
-            ()-> new SwordItem(ModToolTiers.FROSTSTEEL, 11, -3F, new Item.Properties()));
+            ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 11, -3F, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
