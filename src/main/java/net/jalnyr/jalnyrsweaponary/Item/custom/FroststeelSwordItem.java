@@ -40,8 +40,4 @@ public class FroststeelSwordItem extends SwordItem {
         pTooltipComponents.add(Component.translatable("tooltip.jalnyrsweaponary.froststeel.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
-    @Override
-    public Component getDescription() {
-        return super.getDescription();
-    }
 }
