@@ -21,6 +21,10 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FROSTSTEEL_SWORD = ITEMS.register("froststeel_sword",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 5, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> FROSTSTEEL_KATANA = ITEMS.register("froststeel_katana",
+            ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 4, -2.0F, new Item.Properties()));
+    public static final RegistryObject<Item> FROSTSTEEL_KNIFE = ITEMS.register("froststeel_knife",
+            ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 2, -1.6F, new Item.Properties()));
     public static final RegistryObject<Item> FROSTSTEEL_GREATSWORD = ITEMS.register("froststeel_greatsword",
             ()-> new SwordItem(ModToolTiers.FROSTSTEEL, 9, -3F, new Item.Properties()));
     public static final RegistryObject<Item> DUAL_FROSTSTEEL_SWORD = ITEMS.register("dual_froststeel_sword",
