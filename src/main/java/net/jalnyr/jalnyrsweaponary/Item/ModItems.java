@@ -1,5 +1,6 @@
 package net.jalnyr.jalnyrsweaponary.Item;
 
+import net.jalnyr.jalnyrsweaponary.Item.custom.FlamemetalSwordItem;
 import net.jalnyr.jalnyrsweaponary.Item.custom.FroststeelSwordItem;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.minecraft.world.item.Item;
@@ -15,12 +16,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> FROSTSTEEL_INGOT = ITEMS.register("froststeel_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FLAMEMETAL_INGOT = ITEMS.register("flamemetal_ingot",
+            ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FROZEN_STICK = ITEMS.register("frozen_stick",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_FROSTSTEEL = ITEMS.register("raw_froststeel",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_FLAMEMETAL = ITEMS.register("raw_flamemetal",
+            ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FROSTSTEEL_SWORD = ITEMS.register("froststeel_sword",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 5, -2.4F, new Item.Properties()));
+    public static final RegistryObject<Item> FLAMEMETAL_SWORD = ITEMS.register("flamemetal_sword",
+            ()-> new FlamemetalSwordItem(ModToolTiers.FLAMEMETAL, 5, -2.4F, new Item.Properties()));
     public static final RegistryObject<Item> FROSTSTEEL_KATANA = ITEMS.register("froststeel_katana",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 4, -2.0F, new Item.Properties()));
     public static final RegistryObject<Item> FROSTSTEEL_KNIFE = ITEMS.register("froststeel_knife",

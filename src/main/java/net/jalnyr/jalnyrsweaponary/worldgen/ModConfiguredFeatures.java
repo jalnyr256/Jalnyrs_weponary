@@ -30,6 +30,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FROSTSTEEL_ORE_KEY = registerKey("froststeel_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FLAMEMETAL_ORE_KEY = registerKey("flamemetal_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_KEY = registerKey("frozen");
     private static TreeConfiguration.TreeConfigurationBuilder createStraightBlobTree(Block p_195147_, Block p_195148_, int pBaseHeight, int pHeightRandA, int pHeightRandB, int p_195152_) {
@@ -44,7 +45,10 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> overworldFroststeelOres = List.of(OreConfiguration.target(stoneReplaceable,
                 ModBlocks.FROSTSTEEL_ORE.get().defaultBlockState()));
+        List<OreConfiguration.TargetBlockState> overworldFlamemetalOres = List.of(OreConfiguration.target(stoneReplaceable,
+                ModBlocks.FLAMEMETAl_ORE.get().defaultBlockState()));
 
+        register(context, OVERWORLD_FLAMEMETAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFlamemetalOres, 9));
         register(context, OVERWORLD_FROSTSTEEL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFroststeelOres, 9));
 
         register(context, FROZEN_KEY, Feature.TREE, createFrozen().build());

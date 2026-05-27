@@ -2,16 +2,23 @@
   "item.jalnyrsweaponary.froststeel_ingot": "Froststeel Ingot",
   "item.jalnyrsweaponary.raw_froststeel": "Raw Froststeel",
   "item.jalnyrsweaponary.frozen_stick": "Frozen Stick",
+
+  "item.jalnyrsweaponary.flamemetal_ingot": "Flamemetal Ingot",
+  "item.jalnyrsweaponary.raw_flamemetal": "Raw Flamemetal",
+
   "item.jalnyrsweaponary.froststeel_sword": "§b§lFroststeel Sword",
   "item.jalnyrsweaponary.froststeel_katana": "§b§lFroststeel Katana",
   "item.jalnyrsweaponary.froststeel_knife": "§b§lFroststeel Knife",
   "item.jalnyrsweaponary.dual_froststeel_sword": "§b§lDual Froststeel Sword",
   "item.jalnyrsweaponary.froststeel_greatsword": "§b§lFroststeel GreatSword",
 
+  "item.jalnyrsweaponary.flamemetal_sword": "§6§lFlamemetal Sword",
+
   "block.jalnyrsweaponary.frozen_log": "Frozen Log",
   "block.jalnyrsweaponary.frozen_sapling": "Frozen Sapling",
   "block.jalnyrsweaponary.froststeel_block": "Froststeel Block",
   "block.jalnyrsweaponary.froststeel_ore": "Froststeel Ore",
+  "block.jalnyrsweaponary.flamemetal_ore": "Flamemetal Ore",
   "block.jalnyrsweaponary.frozen_wood": "Frozen Wood",
   "block.jalnyrsweaponary.stripped_frozen_log": "Stripped Frozen Log",
   "block.jalnyrsweaponary.stripped_frozen_wood": "Stripped Frozen Wood",
@@ -19,6 +26,7 @@
   "block.jalnyrsweaponary.frozen_planks": "Frozen Planks",
 
   "tooltip.jalnyrsweaponary.froststeel.tooltip": "§3Slows down targets",
+  "tooltip.jalnyrsweaponary.flamemetal.tooltip": "§eInflicts targets on fire",
 
   "creativetab.jalnyrsweaponary": "Jalnyr's Weaponary"
 }

@@ -32,6 +32,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> FROSTSTEEL_ORE = registerBlock("froststeel_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<Block> FLAMEMETAl_ORE = registerBlock("flamemetal_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<Block> FROZEN_WOOD = registerBlock("frozen_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> FROZEN_SAPLING = registerBlock("frozen_sapling",

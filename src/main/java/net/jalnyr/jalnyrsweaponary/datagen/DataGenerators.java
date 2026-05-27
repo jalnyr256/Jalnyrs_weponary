@@ -1,6 +1,7 @@
 package net.jalnyr.jalnyrsweaponary.datagen;
 
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.datagen.loot.ModBlockLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -19,6 +20,7 @@ public class DataGenerators {
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+        generator.addProvider(event.includeServer(), ModLootTableProvider.create(packOutput));
 
         ModBlockTagGenerator blockTagGenerator = generator.addProvider(event.includeServer(),
                 new ModBlockTagGenerator(packOutput, lookupProvider, existingFileHelper));

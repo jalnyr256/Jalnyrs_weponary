@@ -22,12 +22,18 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> FROSTSTEEL_ORE_PLACED_KEY = registerKey("froststeel_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> FLAMEMETAL_ORE_PLACED_KEY = registerKey("flamemetal_ore_placed");
+
     public static final ResourceKey<PlacedFeature> FROZEN_PLACED_KEY = registerKey("frozen_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, FROSTSTEEL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FROSTSTEEL_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(2,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, FLAMEMETAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FLAMEMETAL_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(2,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

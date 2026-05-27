@@ -40,4 +40,9 @@ public class FroststeelSwordItem extends SwordItem {
         pTooltipComponents.add(Component.translatable("tooltip.jalnyrsweaponary.froststeel.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
+
+    @Override
+    public Rarity getRarity(ItemStack pStack) {
+        return Rarity.EPIC;
+    }
 }

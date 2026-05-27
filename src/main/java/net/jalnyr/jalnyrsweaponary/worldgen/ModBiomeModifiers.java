@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_FROSTSTEEL_ORE = registerKey("add_froststeel_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FLAMEMETAL_ORE = registerKey("add_flamemetal_ore");
     public static final ResourceKey<BiomeModifier> ADD_TREE_FROZEN = registerKey("add_tree_frozen");
 
 
@@ -25,6 +26,10 @@ public class ModBiomeModifiers {
         context.register(ADD_FROSTSTEEL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FROSTSTEEL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+        context.register(ADD_FLAMEMETAL_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLAMEMETAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
         context.register(ADD_TREE_FROZEN, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_COLD),

@@ -28,9 +28,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.FROZEN_PLANKS.get());
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.FROSTSTEEL_BLOCK.get())
-                .add(ModBlocks.FROSTSTEEL_ORE.get());
+                .add(ModBlocks.FROSTSTEEL_ORE.get())
+                .add(ModBlocks.FLAMEMETAl_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.FROSTSTEEL_BLOCK.get())
-                .add(ModBlocks.FROSTSTEEL_ORE.get());
+                .add(ModBlocks.FROSTSTEEL_ORE.get())
+                .add(ModBlocks.FLAMEMETAl_ORE.get());
     }
 }

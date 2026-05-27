@@ -17,6 +17,10 @@ public class ModToolTiers {
             new ForgeTier(5, 1500, 5f, 4f, 25,
                     ModTags.Blocks.NEEDS_FROSTSTEEL_TOOL, () -> Ingredient.of(ModItems.FROSTSTEEL_INGOT.get())),
             new ResourceLocation(JalnyrsWeaponary.MOD_ID, "froststeel"), List.of(Tiers.NETHERITE), List.of());
+    public static final Tier FLAMEMETAL = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 1500, 5f, 4f, 25,
+                    ModTags.Blocks.NEEDS_FLAMEMETAL_TOOL, () -> Ingredient.of(ModItems.FLAMEMETAL_INGOT.get())),
+            new ResourceLocation(JalnyrsWeaponary.MOD_ID, "flamemetal"), List.of(Tiers.NETHERITE), List.of());
 
 
 }

@@ -24,6 +24,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DUAL_FROSTSTEEL_SWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_KATANA.get());
                         pOutput.accept(ModItems.FROSTSTEEL_KNIFE.get());
+
+                        pOutput.accept(ModItems.FLAMEMETAL_SWORD.get());
+
+                        pOutput.accept(ModItems.FLAMEMETAL_INGOT.get());
+                        pOutput.accept(ModItems.RAW_FLAMEMETAL.get());
+
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FROSTSTEEL.get());
                         pOutput.accept(ModItems.FROZEN_STICK.get());

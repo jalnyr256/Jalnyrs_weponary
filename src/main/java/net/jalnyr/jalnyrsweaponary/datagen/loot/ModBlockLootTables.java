@@ -26,6 +26,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.FROSTSTEEL_BLOCK.get());
         this.add(ModBlocks.FROSTSTEEL_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.FROSTSTEEL_ORE.get(), ModItems.RAW_FROSTSTEEL.get()));
+        this.add(ModBlocks.FLAMEMETAl_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.FLAMEMETAl_ORE.get(), ModItems.RAW_FLAMEMETAL.get()));
         this.dropSelf(ModBlocks.FROZEN_LOG.get());
         this.dropSelf(ModBlocks.FROZEN_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_FROZEN_LOG.get());
