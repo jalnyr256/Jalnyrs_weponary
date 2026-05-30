@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column_horizontal",
   "textures": {
-    "end": "jalnyrsweaponary:block/frozen_log_top",
+    "end": "jalnyrsweaponary:block/frozen_log",
     "side": "jalnyrsweaponary:block/frozen_log"
   }
 }

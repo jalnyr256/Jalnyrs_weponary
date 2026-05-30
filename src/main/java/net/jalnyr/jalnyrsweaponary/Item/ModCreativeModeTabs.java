@@ -24,8 +24,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.DUAL_FROSTSTEEL_SWORD.get());
                         pOutput.accept(ModItems.FROSTSTEEL_KATANA.get());
                         pOutput.accept(ModItems.FROSTSTEEL_KNIFE.get());
+                        pOutput.accept(ModItems.FROSTSTEEL_SPEAR.get());
 
                         pOutput.accept(ModItems.FLAMEMETAL_SWORD.get());
+                        pOutput.accept(ModItems.FLAMEMETAL_KNIFE.get());
+                        pOutput.accept(ModItems.FLAMEMETAL_KATANA.get());
+                        pOutput.accept(ModItems.FLAMEMETAL_SPEAR.get());
 
                         pOutput.accept(ModItems.FLAMEMETAL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FLAMEMETAL.get());
@@ -37,6 +41,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.FROZEN_WOOD.get());
                         pOutput.accept(ModBlocks.FROSTSTEEL_BLOCK.get());
                         pOutput.accept(ModBlocks.FROSTSTEEL_ORE.get());
+                        pOutput.accept(ModBlocks.FLAMEMETAl_ORE.get());
                         pOutput.accept(ModBlocks.FROZEN_LOG.get());
                         pOutput.accept(ModBlocks.FROZEN_LEAVES.get());
                         pOutput.accept(ModBlocks.STRIPPED_FROZEN_WOOD.get());
