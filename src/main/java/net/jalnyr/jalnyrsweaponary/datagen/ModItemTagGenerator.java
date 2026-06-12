@@ -29,5 +29,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.FROZEN_PLANKS.get().asItem());
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.SIMPLE_KNIGHT_BOOTS.get(),
+                        ModItems.SIMPLE_KNIGHT_LEGGINGS.get(),
+                        ModItems.SIMPLE_KNIGHT_CHESTPLATE.get(),
+                        ModItems.SIMPLE_KNIGHT_HELMET.get());
     }
 }

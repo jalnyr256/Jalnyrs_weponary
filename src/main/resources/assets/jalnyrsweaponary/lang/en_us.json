@@ -28,9 +28,16 @@
   "block.jalnyrsweaponary.stripped_frozen_wood": "Stripped Frozen Wood",
   "block.jalnyrsweaponary.frozen_leaves": "Frozen Leaves",
   "block.jalnyrsweaponary.frozen_planks": "Frozen Planks",
+  "item.jalnyrsweaponary.simple_knight_helmet": "Simple Knight Helmet",
+  "item.jalnyrsweaponary.simple_knight_chestplate": "Simple Knight Chestplate",
+  "item.jalnyrsweaponary.simple_knight_leggings": "Simple Knight Leggings",
+  "item.jalnyrsweaponary.simple_knight_boots": "Simple Knight Boots",
+
 
   "tooltip.jalnyrsweaponary.froststeel.tooltip": "§3Slows down targets",
   "tooltip.jalnyrsweaponary.flamemetal.tooltip": "§eInflicts targets on fire",
+  "tooltip.jalnyrsweaponary.knight.tooltip": "§lSet effect: Makes you stronger while slowing you down",
+
 
   "creativetab.jalnyrsweaponary": "Jalnyr's Weaponary"
 }

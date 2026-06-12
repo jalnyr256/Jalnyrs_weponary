@@ -2,7 +2,9 @@ package net.jalnyr.jalnyrsweaponary.Item;
 
 import net.jalnyr.jalnyrsweaponary.Item.custom.FlamemetalSwordItem;
 import net.jalnyr.jalnyrsweaponary.Item.custom.FroststeelSwordItem;
+import net.jalnyr.jalnyrsweaponary.Item.custom.ModArmorItem;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -47,6 +49,15 @@ public class ModItems {
     public static final RegistryObject<Item> DUAL_FROSTSTEEL_SWORD = ITEMS.register("dual_froststeel_sword",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 11, -3F, new Item.Properties()));
 
+
+    public static final RegistryObject<Item> SIMPLE_KNIGHT_HELMET = ITEMS.register("simple_knight_helmet",
+            ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SIMPLE_KNIGHT_CHESTPLATE = ITEMS.register("simple_knight_chestplate",
+            ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> SIMPLE_KNIGHT_LEGGINGS = ITEMS.register("simple_knight_leggings",
+            ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> SIMPLE_KNIGHT_BOOTS = ITEMS.register("simple_knight_boots",
+            ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

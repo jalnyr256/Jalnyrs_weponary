@@ -33,6 +33,10 @@ public class ModCreativeModeTabs {
 
                         pOutput.accept(ModItems.FLAMEMETAL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FLAMEMETAL.get());
+                        pOutput.accept(ModItems.SIMPLE_KNIGHT_HELMET.get());
+                        pOutput.accept(ModItems.SIMPLE_KNIGHT_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SIMPLE_KNIGHT_LEGGINGS.get());
+                        pOutput.accept(ModItems.SIMPLE_KNIGHT_BOOTS.get());
 
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FROSTSTEEL.get());

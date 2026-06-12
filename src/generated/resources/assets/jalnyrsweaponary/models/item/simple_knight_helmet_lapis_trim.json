@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jalnyrsweaponary:item/simple_knight_helmet",
+    "layer1": "minecraft:trims/items/helmet_trim_lapis"
+  }
+}
