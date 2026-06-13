@@ -37,6 +37,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SIMPLE_KNIGHT_CHESTPLATE.get());
                         pOutput.accept(ModItems.SIMPLE_KNIGHT_LEGGINGS.get());
                         pOutput.accept(ModItems.SIMPLE_KNIGHT_BOOTS.get());
+                        pOutput.accept(ModItems.SIMPLE_KNIGHT_SWORD.get());
+                        pOutput.accept(ModItems.FROSTY_KNIGHT_SWORD.get());
+                        pOutput.accept(ModItems.BLOODY_KNIGHT_SWORD.get());
+                        pOutput.accept(ModItems.FIERY_GEMSTONE.get());
+                        pOutput.accept(ModItems.FROSTY_GEMSTONE.get());
+                        pOutput.accept(ModItems.BLOODY_GEMSTONE.get());
+                        pOutput.accept(ModItems.SPEEDY_GEMSTONE.get());
 
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FROSTSTEEL.get());

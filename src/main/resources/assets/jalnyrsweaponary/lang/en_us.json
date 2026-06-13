@@ -32,11 +32,20 @@
   "item.jalnyrsweaponary.simple_knight_chestplate": "Simple Knight Chestplate",
   "item.jalnyrsweaponary.simple_knight_leggings": "Simple Knight Leggings",
   "item.jalnyrsweaponary.simple_knight_boots": "Simple Knight Boots",
-
+  "item.jalnyrsweaponary.simple_knight_sword": "Simple Knight Sword",
+  "item.jalnyrsweaponary.frosty_knight_sword": "Frosty Knight Sword",
+  "item.jalnyrsweaponary.bloody_knight_sword": "Bloody Knight Sword",
+  "item.jalnyrsweaponary.bloody_gemstone": "Bloody Gemstone",
+  "item.jalnyrsweaponary.fiery_gemstone": "Fiery Gemstone",
+  "item.jalnyrsweaponary.frosty_gemstone": "Frosty Gemstone",
+  "item.jalnyrsweaponary.speedy_gemstone": "Speedy Gemstone",
 
   "tooltip.jalnyrsweaponary.froststeel.tooltip": "§3Slows down targets",
   "tooltip.jalnyrsweaponary.flamemetal.tooltip": "§eInflicts targets on fire",
   "tooltip.jalnyrsweaponary.knight.tooltip": "§lSet effect: Makes you stronger while slowing you down",
+  "tooltip.jalnyrsweaponary.knight_sword.tooltip": "§lA sword of a knight",
+  "tooltip.jalnyrsweaponary.frosty_knight_sword.tooltip": "§3§lFreezes targets",
+  "tooltip.jalnyrsweaponary.bloody_knight_sword.tooltip": "§6§lDeals more damage the less health you have",
 
 
   "creativetab.jalnyrsweaponary": "Jalnyr's Weaponary"

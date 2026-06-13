@@ -3,6 +3,7 @@ package net.jalnyr.jalnyrsweaponary.Item;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.util.ModTags;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -21,6 +22,9 @@ public class ModToolTiers {
             new ForgeTier(5, 1500, 5f, 4f, 25,
                     ModTags.Blocks.NEEDS_FLAMEMETAL_TOOL, () -> Ingredient.of(ModItems.FLAMEMETAL_INGOT.get())),
             new ResourceLocation(JalnyrsWeaponary.MOD_ID, "flamemetal"), List.of(Tiers.NETHERITE), List.of());
-
+    public static final Tier KNIGHT = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 1500, 5f, 4f, 25,
+                    ModTags.Blocks.NEEDS_FLAMEMETAL_TOOL, () -> Ingredient.of(Items.IRON_INGOT)),
+            new ResourceLocation(JalnyrsWeaponary.MOD_ID, "knight"), List.of(Tiers.NETHERITE), List.of());
 
 }

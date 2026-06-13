@@ -10,6 +10,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> NEEDS_FROSTSTEEL_TOOL = tag("needs_froststeel_tool");
         public static final TagKey<Block> NEEDS_FLAMEMETAL_TOOL = tag("needs_flamemetal_tool");
+        public static final TagKey<Block> NEEDS_KNIGHT_TOOL = tag("needs_knight_tool");
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(JalnyrsWeaponary.MOD_ID, name));
         }

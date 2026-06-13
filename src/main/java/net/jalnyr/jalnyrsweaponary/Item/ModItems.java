@@ -1,8 +1,6 @@
 package net.jalnyr.jalnyrsweaponary.Item;
 
-import net.jalnyr.jalnyrsweaponary.Item.custom.FlamemetalSwordItem;
-import net.jalnyr.jalnyrsweaponary.Item.custom.FroststeelSwordItem;
-import net.jalnyr.jalnyrsweaponary.Item.custom.ModArmorItem;
+import net.jalnyr.jalnyrsweaponary.Item.custom.*;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
@@ -50,6 +48,15 @@ public class ModItems {
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 11, -3F, new Item.Properties()));
 
 
+    public static final RegistryObject<Item> SIMPLE_KNIGHT_SWORD = ITEMS.register("simple_knight_sword",
+            ()-> new KnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROSTY_KNIGHT_SWORD = ITEMS.register("frosty_knight_sword",
+            ()-> new FrostyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> BLOODY_KNIGHT_SWORD = ITEMS.register("bloody_knight_sword",
+            ()-> new BloodyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
+
+
     public static final RegistryObject<Item> SIMPLE_KNIGHT_HELMET = ITEMS.register("simple_knight_helmet",
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> SIMPLE_KNIGHT_CHESTPLATE = ITEMS.register("simple_knight_chestplate",
@@ -58,6 +65,14 @@ public class ModItems {
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> SIMPLE_KNIGHT_BOOTS = ITEMS.register("simple_knight_boots",
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> FIERY_GEMSTONE = ITEMS.register("fiery_gemstone",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BLOODY_GEMSTONE = ITEMS.register("bloody_gemstone",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SPEEDY_GEMSTONE = ITEMS.register("speedy_gemstone",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FROSTY_GEMSTONE = ITEMS.register("frosty_gemstone",
+            ()-> new Item(new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

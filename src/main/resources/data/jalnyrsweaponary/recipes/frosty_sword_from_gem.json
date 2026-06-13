@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#x"
+  ],
+  "key": {
+    "#": {
+      "item": "jalnyrsweaponary:simple_knight_sword"
+    },
+    "x": {
+      "item": "jalnyrsweaponary:frosty_gemstone"
+    }
+  },
+  "result": {
+    "item": "jalnyrsweaponary:frosty_knight_sword"
+  }
+}
