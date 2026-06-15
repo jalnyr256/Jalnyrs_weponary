@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "jalnyrsweaponary:item/speedy_knight_sword3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "jalnyrsweaponary:item/speedy_knight_sword3d"
+    },
+    "ground": {
+      "parent": "jalnyrsweaponary:item/speedy_knight_sword3d"
+    },
+    "fixed": {
+      "parent": "jalnyrsweaponary:item/speedy_knight_sword3d"
+    }
+  }
+}

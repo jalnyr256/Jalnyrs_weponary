@@ -1,0 +1,64 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "jalnyrsweaponary:item/speedy_knight_sword3d",
+		"particle": "jalnyrsweaponary:item/speedy_knight_sword3d"
+	},
+	"elements": [
+		{
+			"from": [7, 7, 7],
+			"to": [9, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 7]},
+			"faces": {
+				"north": {"uv": [8, 8, 10, 10], "texture": "#0"},
+				"east": {"uv": [0, 10, 2, 12], "texture": "#0"},
+				"south": {"uv": [2, 10, 4, 12], "texture": "#0"},
+				"west": {"uv": [10, 2, 12, 4], "texture": "#0"},
+				"up": {"uv": [6, 12, 4, 10], "texture": "#0"},
+				"down": {"uv": [12, 4, 10, 6], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 9, 5],
+			"to": [9, 11, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 9, 7]},
+			"faces": {
+				"north": {"uv": [10, 6, 12, 8], "texture": "#0"},
+				"east": {"uv": [0, 8, 6, 10], "texture": "#0"},
+				"south": {"uv": [8, 10, 10, 12], "texture": "#0"},
+				"west": {"uv": [8, 0, 14, 2], "texture": "#0"},
+				"up": {"uv": [10, 8, 8, 2], "texture": "#0"},
+				"down": {"uv": [8, 8, 6, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 11, 7],
+			"to": [9, 19, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 11, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 8], "texture": "#0"},
+				"east": {"uv": [2, 0, 4, 8], "texture": "#0"},
+				"south": {"uv": [4, 0, 6, 8], "texture": "#0"},
+				"west": {"uv": [6, 0, 8, 8], "texture": "#0"},
+				"up": {"uv": [12, 10, 10, 8], "texture": "#0"},
+				"down": {"uv": [12, 10, 10, 12], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [-27.29, -40.18, -38.63],
+			"translation": [-3, -7, 0],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "sword",
+			"origin": [7, 7, 7],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

@@ -4,28 +4,22 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.MobType;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class FrostyKnightSwordItem extends SwordItem {
+public class SpeedyKnightSwordItem extends SwordItem {
 
-    public FrostyKnightSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
+    public SpeedyKnightSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
     public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity player) {
         entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 160, 2,
                 true,true, true));
-        if (entity.getMobType() == MobType.UNDEAD) {
-            entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 160, 2,
-                    true,true, true));
-        }
-        else {
-            entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 160, 2, true, true,true));
-        }
+        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 160, 2,
+                true,true, true));
         return true;
     }
     @Override

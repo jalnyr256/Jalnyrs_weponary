@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SIMPLE_KNIGHT_SWORD.get());
                         pOutput.accept(ModItems.FROSTY_KNIGHT_SWORD.get());
                         pOutput.accept(ModItems.BLOODY_KNIGHT_SWORD.get());
+                        pOutput.accept(ModItems.SPEEDY_KNIGHT_SWORD.get());
                         pOutput.accept(ModItems.FIERY_GEMSTONE.get());
                         pOutput.accept(ModItems.FROSTY_GEMSTONE.get());
                         pOutput.accept(ModItems.BLOODY_GEMSTONE.get());

@@ -55,7 +55,8 @@ public class ModItems {
             ()-> new FrostyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> BLOODY_KNIGHT_SWORD = ITEMS.register("bloody_knight_sword",
             ()-> new BloodyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
-
+    public static final RegistryObject<Item> SPEEDY_KNIGHT_SWORD = ITEMS.register("speedy_knight_sword",
+            ()-> new SpeedyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
 
     public static final RegistryObject<Item> SIMPLE_KNIGHT_HELMET = ITEMS.register("simple_knight_helmet",
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
