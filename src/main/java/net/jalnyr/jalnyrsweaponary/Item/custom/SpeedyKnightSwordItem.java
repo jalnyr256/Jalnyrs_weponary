@@ -24,7 +24,7 @@ public class SpeedyKnightSwordItem extends SwordItem {
     }
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(Component.translatable("tooltip.jalnyrsweaponary.frosty_knight_sword.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.jalnyrsweaponary.speedy_knight_sword.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 

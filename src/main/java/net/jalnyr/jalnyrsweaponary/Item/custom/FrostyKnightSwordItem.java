@@ -19,13 +19,8 @@ public class FrostyKnightSwordItem extends SwordItem {
     public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity player) {
         entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 160, 2,
                 true,true, true));
-        if (entity.getMobType() == MobType.UNDEAD) {
-            entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 160, 2,
-                    true,true, true));
-        }
-        else {
-            entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 160, 2, true, true,true));
-        }
+        entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 160, 2,
+                true,true, true));
         return true;
     }
     @Override

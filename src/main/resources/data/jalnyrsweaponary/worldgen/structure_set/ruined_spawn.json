@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "jalnyrsweaponary:ruined_spawn",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1236543,
+
+    "spacing": 20,
+
+    "separation": 6,
+
+    "type": "minecraft:random_spread"
+  }
+}

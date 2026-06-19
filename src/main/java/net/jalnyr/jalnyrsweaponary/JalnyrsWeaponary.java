@@ -4,7 +4,11 @@ import com.mojang.logging.LogUtils;
 import net.jalnyr.jalnyrsweaponary.Item.ModCreativeModeTabs;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
+import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
+import net.jalnyr.jalnyrsweaponary.entity.client.OldManRenderer;
 import net.jalnyr.jalnyrsweaponary.loot.ModLootModifiers;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -36,6 +40,7 @@ public class JalnyrsWeaponary
         ModCreativeModeTabs.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
+        ModEntities.register(modEventBus);
 
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -67,12 +72,10 @@ public class JalnyrsWeaponary
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
-    public static class ClientModEvents
-    {
+    public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.OLD_MAN.get(), OldManRenderer::new);
         }
     }
 }
