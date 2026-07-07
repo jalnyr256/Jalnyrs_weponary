@@ -60,6 +60,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STRIPPED_FROZEN_LOG.get());
                         pOutput.accept(ModBlocks.FROZEN_PLANKS.get());
                         pOutput.accept(ModBlocks.FROZEN_SAPLING.get());
+
+                        pOutput.accept(ModItems.TRIASSIC_SCALE.get());
+                        pOutput.accept(ModItems.TRIASSIC_SCALE_BOOTS.get());
+                        pOutput.accept(ModItems.TRIASSIC_SCALE_LEGGINGS.get());
+                        pOutput.accept(ModItems.TRIASSIC_SCALE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.TRIASSIC_SCALE_HELMET.get());
                     })
                     .build());
 

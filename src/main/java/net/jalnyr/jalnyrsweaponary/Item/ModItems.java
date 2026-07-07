@@ -24,6 +24,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_FLAMEMETAL = ITEMS.register("raw_flamemetal",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TRIASSIC_SCALE = ITEMS.register("triassic_scale",
+            ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FROSTSTEEL_SWORD = ITEMS.register("froststeel_sword",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 5, -2.4F, new Item.Properties()));
@@ -66,6 +68,16 @@ public class ModItems {
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> SIMPLE_KNIGHT_BOOTS = ITEMS.register("simple_knight_boots",
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> TRIASSIC_SCALE_HELMET = ITEMS.register("triassic_scale_helmet",
+            ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> TRIASSIC_SCALE_CHESTPLATE = ITEMS.register("triassic_scale_chestplate",
+            ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> TRIASSIC_SCALE_LEGGINGS = ITEMS.register("triassic_scale_leggings",
+            ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> TRIASSIC_SCALE_BOOTS = ITEMS.register("triassic_scale_boots",
+            ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     public static final RegistryObject<Item> FIERY_GEMSTONE = ITEMS.register("fiery_gemstone",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BLOODY_GEMSTONE = ITEMS.register("bloody_gemstone",

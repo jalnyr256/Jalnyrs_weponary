@@ -2,6 +2,7 @@
   "item.jalnyrsweaponary.froststeel_ingot": "Froststeel Ingot",
   "item.jalnyrsweaponary.raw_froststeel": "Raw Froststeel",
   "item.jalnyrsweaponary.frozen_stick": "Frozen Stick",
+  "item.jalnyrsweaponary.triassic_scale": "Triassic Scale",
 
   "item.jalnyrsweaponary.flamemetal_ingot": "Flamemetal Ingot",
   "item.jalnyrsweaponary.raw_flamemetal": "Raw Flamemetal",
@@ -32,6 +33,12 @@
   "item.jalnyrsweaponary.simple_knight_chestplate": "Simple Knight Chestplate",
   "item.jalnyrsweaponary.simple_knight_leggings": "Simple Knight Leggings",
   "item.jalnyrsweaponary.simple_knight_boots": "Simple Knight Boots",
+
+  "item.jalnyrsweaponary.triassic_scale_helmet": "Triassic Scale Helmet",
+  "item.jalnyrsweaponary.triassic_scale_chestplate": "Triassic Scale Chestplate",
+  "item.jalnyrsweaponary.triassic_scale_leggings": "Triassic Scale Leggings",
+  "item.jalnyrsweaponary.triassic_scale_boots": "Triassic Scale Boots",
+
   "item.jalnyrsweaponary.simple_knight_sword": "Simple Knight Sword",
   "item.jalnyrsweaponary.frosty_knight_sword": "Frosty Knight Sword",
   "item.jalnyrsweaponary.bloody_knight_sword": "Bloody Knight Sword",
@@ -41,6 +48,15 @@
   "item.jalnyrsweaponary.fiery_gemstone": "Fiery Gemstone",
   "item.jalnyrsweaponary.frosty_gemstone": "Frosty Gemstone",
   "item.jalnyrsweaponary.speedy_gemstone": "Speedy Gemstone",
+
+  "message.jalnyrsweaponary.1.message": "§l§3Old Man: Hello traveler.",
+  "message.jalnyrsweaponary.2.message": "Old Man: Im an old man that has been living here for a long time.",
+  "message.jalnyrsweaponary.3.message": "§l§3Old Man: I remember the good days when you were the king.",
+  "message.jalnyrsweaponary.4.message": "Old Man: They are now in the past.",
+  "message.jalnyrsweaponary.5.message": "§l§3Old Man: But I still have something for you.",
+  "message.jalnyrsweaponary.6.message": "Old Man: During the great war a few gemstones were stolen and they were scattered around the destroyed kingdom.",
+  "message.jalnyrsweaponary.7.message": "§l§3Old Man: These stones have magical powers and with them you can upgrade your gear and defeat the tyrant that destroyed your kingdom. ",
+  "message.jalnyrsweaponary.8.message": "Old Man: No one knows where you can find these gemstones but what we do know is that they are not easy to find.",
 
   "tooltip.jalnyrsweaponary.froststeel.tooltip": "§3Slows down targets",
   "tooltip.jalnyrsweaponary.flamemetal.tooltip": "§eInflicts targets on fire",

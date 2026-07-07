@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "jalnyrsweaponary:triassic_scale"
+    }
+  },
+    "result": {
+      "item": "jalnyrsweaponary:triassic_scale_helmet"
+    }
+}

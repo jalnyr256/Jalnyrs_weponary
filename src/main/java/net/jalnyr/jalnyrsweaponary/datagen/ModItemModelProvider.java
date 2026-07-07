@@ -41,6 +41,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SIMPLE_KNIGHT_CHESTPLATE);
         trimmedArmorItem(ModItems.SIMPLE_KNIGHT_HELMET);
         trimmedArmorItem(ModItems.SIMPLE_KNIGHT_LEGGINGS);
+
+        trimmedArmorItem(ModItems.TRIASSIC_SCALE_BOOTS);
+        trimmedArmorItem(ModItems.TRIASSIC_SCALE_CHESTPLATE);
+        trimmedArmorItem(ModItems.TRIASSIC_SCALE_LEGGINGS);
+        trimmedArmorItem(ModItems.TRIASSIC_SCALE_HELMET);
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = JalnyrsWeaponary.MOD_ID; // Change this to your mod id

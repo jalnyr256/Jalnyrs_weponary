@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "jalnyrsweaponary:item/triassic_scale_leggings",
+    "layer1": "minecraft:trims/items/leggings_trim_emerald"
+  }
+}

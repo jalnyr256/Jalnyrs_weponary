@@ -33,6 +33,13 @@ public class OldManEntity extends AgeableMob {
         super(pEntityType, pLevel);
     }
     public boolean sentMessage = false;
+    public boolean sentMessage2 = true;
+    public boolean sentMessage3 = true;
+    public boolean sentMessage4 = true;
+    public boolean sentMessage5 = true;
+    public boolean sentMessage6 = true;
+    public boolean sentMessage7 = true;
+    public boolean sentMessage8 = true;
 
     @Override
     protected void registerGoals() {
@@ -47,8 +54,57 @@ public class OldManEntity extends AgeableMob {
     public InteractionResult mobInteract(Player pPlayer, InteractionHand pHand) {
         if (!sentMessage) {
             if (level().isClientSide) {
-                pPlayer.sendSystemMessage(Component.translatable("tooltip.jalnyrsweaponary.froststeel.tooltip"));
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.1.message"));
                 sentMessage = true;
+            }
+            sentMessage2 = false;
+        }
+        else if (!sentMessage2) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.2.message"));
+                sentMessage2 = true;
+            }
+            sentMessage3 = false;
+        }
+        else if (!sentMessage3) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.3.message"));
+                sentMessage3 = true;
+            }
+            sentMessage4 = false;
+        }
+        else if (!sentMessage4) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.4.message"));
+                sentMessage4 = true;
+            }
+            sentMessage5 = false;
+        }
+        else if (!sentMessage5) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.5.message"));
+                sentMessage5 = true;
+            }
+            sentMessage6 = false;
+        }
+        else if (!sentMessage6) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.6.message"));
+                sentMessage6 = true;
+            }
+            sentMessage7 = false;
+        }
+        else if (!sentMessage7) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.7.message"));
+                sentMessage7 = true;
+            }
+            sentMessage8 = false;
+        }
+        else if (!sentMessage8) {
+            if (level().isClientSide) {
+                pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.8.message"));
+                sentMessage8 = true;
             }
         }
         else {

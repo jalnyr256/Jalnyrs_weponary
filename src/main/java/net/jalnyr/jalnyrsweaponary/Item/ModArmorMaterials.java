@@ -12,7 +12,9 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     SIMPLE_KNIGHT_ARMOR("simple_knight_armor", 26, new int[]{5, 7, 5, 4}, 25, SoundEvents.ARMOR_EQUIP_LEATHER, 1f, 0f,
-            () -> Ingredient.of(Items.IRON_INGOT));
+            () -> Ingredient.of(Items.IRON_INGOT)),
+    TRIASSIC_SCALE_ARMOR("triassic_scale_armor", 40, new int[]{8, 14, 10, 7}, 25, SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 2f,
+            () -> Ingredient.of(ModItems.TRIASSIC_SCALE.get()));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
@@ -22,7 +24,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float knockbackResistance;
     private final Supplier<Ingredient> repairIngredient;
 
-    private static final int[] BASE_DURABILITY = {11, 16, 16, 11};
+    private static final int[] BASE_DURABILITY = {110, 160, 160, 110};
 
     ModArmorMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantmentValue, SoundEvent equipSound, float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
