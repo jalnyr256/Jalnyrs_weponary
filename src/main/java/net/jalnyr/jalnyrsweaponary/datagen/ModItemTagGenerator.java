@@ -33,6 +33,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SIMPLE_KNIGHT_BOOTS.get(),
                         ModItems.SIMPLE_KNIGHT_LEGGINGS.get(),
                         ModItems.SIMPLE_KNIGHT_CHESTPLATE.get(),
-                        ModItems.SIMPLE_KNIGHT_HELMET.get());
+                        ModItems.SIMPLE_KNIGHT_HELMET.get(),
+                        ModItems.TRIASSIC_SCALE_HELMET.get(),
+                        ModItems.TRIASSIC_SCALE_CHESTPLATE.get(),
+                        ModItems.TRIASSIC_SCALE_LEGGINGS.get(),
+                        ModItems.TRIASSIC_SCALE_BOOTS.get());
     }
 }

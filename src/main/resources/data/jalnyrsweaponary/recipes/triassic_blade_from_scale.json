@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " ##",
+    "## ",
+    "x  "
+  ],
+  "key": {
+    "#": {
+      "item": "jalnyrsweaponary:triassic_scale"
+    },
+    "x": {
+      "item": "minecraft:stick"
+    }
+  },
+    "result": {
+      "item": "jalnyrsweaponary:triassic_blade"
+    }
+}

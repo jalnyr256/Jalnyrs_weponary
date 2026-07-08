@@ -77,6 +77,9 @@ public class ModItems {
             ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties()));
     public static final RegistryObject<Item> TRIASSIC_SCALE_BOOTS = ITEMS.register("triassic_scale_boots",
             ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final RegistryObject<Item> TRIASSIC_BLADE = ITEMS.register("triassic_blade",
+            ()-> new SwordItem(ModToolTiers.SCALE, 13, -3F, new Item.Properties()));
+
 
     public static final RegistryObject<Item> FIERY_GEMSTONE = ITEMS.register("fiery_gemstone",
             ()-> new Item(new Item.Properties()));

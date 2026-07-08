@@ -26,5 +26,9 @@ public class ModToolTiers {
             new ForgeTier(5, 1500, 5f, 4f, 25,
                     ModTags.Blocks.NEEDS_FLAMEMETAL_TOOL, () -> Ingredient.of(Items.IRON_INGOT)),
             new ResourceLocation(JalnyrsWeaponary.MOD_ID, "knight"), List.of(Tiers.NETHERITE), List.of());
+    public static final Tier SCALE = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 1500, 5f, 4f, 25,
+                    ModTags.Blocks.NEEDS_FLAMEMETAL_TOOL, () -> Ingredient.of(ModItems.TRIASSIC_SCALE.get())),
+            new ResourceLocation(JalnyrsWeaponary.MOD_ID, "scale"), List.of(Tiers.NETHERITE), List.of());
 
 }

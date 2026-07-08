@@ -1,0 +1,100 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "jalnyrsweaponary:item/triassic_blade3d",
+		"particle": "jalnyrsweaponary:item/triassic_blade3d"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 5],
+			"to": [9, 5, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 0, 5]},
+			"faces": {
+				"north": {"uv": [4, 7, 5, 9.5], "texture": "#0"},
+				"east": {"uv": [7, 4, 8, 6.5], "texture": "#0"},
+				"south": {"uv": [7, 6.5, 8, 9], "texture": "#0"},
+				"west": {"uv": [8, 1, 9, 3.5], "texture": "#0"},
+				"up": {"uv": [7, 10, 6, 9], "texture": "#0"},
+				"down": {"uv": [8, 9, 7, 10], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 5, 1],
+			"to": [9, 7, 11],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 5, 5]},
+			"faces": {
+				"north": {"uv": [9, 7, 10, 8], "texture": "#0"},
+				"east": {"uv": [0, 6, 5, 7], "texture": "#0"},
+				"south": {"uv": [9, 8, 10, 9], "texture": "#0"},
+				"west": {"uv": [6, 0, 11, 1], "texture": "#0"},
+				"up": {"uv": [7, 6, 6, 1], "texture": "#0"},
+				"down": {"uv": [6, 6, 5, 11], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 7, 4],
+			"to": [9, 13, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 7, 5]},
+			"faces": {
+				"north": {"uv": [6, 6, 7, 9], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#0"},
+				"south": {"uv": [0, 7, 1, 10], "texture": "#0"},
+				"west": {"uv": [2, 0, 4, 3], "texture": "#0"},
+				"up": {"uv": [9, 5.5, 8, 3.5], "texture": "#0"},
+				"down": {"uv": [9, 5.5, 8, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 13, 3],
+			"to": [9, 19, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 13, 5]},
+			"faces": {
+				"north": {"uv": [1, 7, 2, 10], "texture": "#0"},
+				"east": {"uv": [0, 3, 2, 6], "texture": "#0"},
+				"south": {"uv": [7, 1, 8, 4], "texture": "#0"},
+				"west": {"uv": [2, 3, 4, 6], "texture": "#0"},
+				"up": {"uv": [9, 9.5, 8, 7.5], "texture": "#0"},
+				"down": {"uv": [10, 1, 9, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 19, 4],
+			"to": [9, 25, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 20, 5]},
+			"faces": {
+				"north": {"uv": [2, 7, 3, 10], "texture": "#0"},
+				"east": {"uv": [4, 0, 6, 3], "texture": "#0"},
+				"south": {"uv": [3, 7, 4, 10], "texture": "#0"},
+				"west": {"uv": [4, 3, 6, 6], "texture": "#0"},
+				"up": {"uv": [10, 5, 9, 3], "texture": "#0"},
+				"down": {"uv": [10, 5, 9, 7], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 4, 4.5]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 4.25, 4]
+		},
+		"firstperson_righthand": {
+			"translation": [0, 0.75, 0]
+		},
+		"gui": {
+			"rotation": [-154.2, -26.4, -132.59],
+			"translation": [-4.5, 0, 0],
+			"scale": [0.75, 0.75, 0.75]
+		}
+	},
+	"groups": [
+		{
+			"name": "triassic_blade",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}
