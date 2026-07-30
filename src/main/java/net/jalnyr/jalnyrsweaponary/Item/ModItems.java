@@ -24,8 +24,13 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_FLAMEMETAL = ITEMS.register("raw_flamemetal",
             ()-> new Item(new Item.Properties()));
+
+
     public static final RegistryObject<Item> TRIASSIC_SCALE = ITEMS.register("triassic_scale",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> JURASSIC_LEAF = ITEMS.register("jurassic_leaf",
+            ()-> new Item(new Item.Properties()));
+
 
     public static final RegistryObject<Item> FROSTSTEEL_SWORD = ITEMS.register("froststeel_sword",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 5, -2.4F, new Item.Properties()));

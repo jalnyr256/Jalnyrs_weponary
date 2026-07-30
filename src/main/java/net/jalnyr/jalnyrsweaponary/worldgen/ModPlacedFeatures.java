@@ -38,7 +38,7 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
         register(context, FROZEN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FROZEN_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.05f, Config.frozenTree),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 0.01f, 1),
                         ModBlocks.FROZEN_SAPLING.get()));
     }
 

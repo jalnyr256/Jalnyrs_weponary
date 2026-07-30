@@ -67,6 +67,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.TRIASSIC_SCALE_CHESTPLATE.get());
                         pOutput.accept(ModItems.TRIASSIC_SCALE_HELMET.get());
                         pOutput.accept(ModItems.TRIASSIC_BLADE.get());
+
+                        pOutput.accept(ModItems.JURASSIC_LEAF.get());
                     })
                     .build());
 

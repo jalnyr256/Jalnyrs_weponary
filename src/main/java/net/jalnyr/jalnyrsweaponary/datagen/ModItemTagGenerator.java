@@ -38,5 +38,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.TRIASSIC_SCALE_CHESTPLATE.get(),
                         ModItems.TRIASSIC_SCALE_LEGGINGS.get(),
                         ModItems.TRIASSIC_SCALE_BOOTS.get());
+
     }
 }

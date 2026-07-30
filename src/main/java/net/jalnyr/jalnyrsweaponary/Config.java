@@ -21,7 +21,7 @@ public class Config
 
     private static final ForgeConfigSpec.IntValue FROZEN_TREE_SPAWN_AMOUNT = BUILDER
             .comment("Frozen tree spawning")
-            .defineInRange("frozenTree", 1, 0, 10);
+            .defineInRange("frozenTree", 10, 2, 10);
 
     // a list of strings that are treated as resource locations for items
     static final ForgeConfigSpec SPEC = BUILDER.build();

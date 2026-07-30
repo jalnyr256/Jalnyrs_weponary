@@ -10,6 +10,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -46,6 +47,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TRIASSIC_SCALE_CHESTPLATE);
         trimmedArmorItem(ModItems.TRIASSIC_SCALE_LEGGINGS);
         trimmedArmorItem(ModItems.TRIASSIC_SCALE_HELMET);
+        basicItem(ModItems.TRIASSIC_SCALE.get());
+        basicItem(ModItems.JURASSIC_LEAF.get());
+        basicItem(ModItems.RAW_FROSTSTEEL.get());
+        basicItem(ModItems.RAW_FLAMEMETAL.get());
+        basicItem(ModItems.FROZEN_STICK.get());
+        basicItem(ModItems.FLAMEMETAL_INGOT.get());
+        basicItem(ModItems.FROSTSTEEL_INGOT.get());
+
+        basicItem(ModItems.SPEEDY_GEMSTONE.get());
+        basicItem(ModItems.FIERY_GEMSTONE.get());
+        basicItem(ModItems.BLOODY_GEMSTONE.get());
+        basicItem(ModItems.FROSTY_GEMSTONE.get());
+        handheldItem(ModItems.FLAMEMETAL_KATANA);
+        handheldItem(ModItems.FLAMEMETAL_KNIFE);
+        handheldItem(ModItems.FLAMEMETAL_SPEAR);
+        handheldItem(ModItems.FLAMEMETAL_SWORD);
+        handheldItem(ModItems.FROSTSTEEL_KATANA);
+        handheldItem(ModItems.FROSTSTEEL_SWORD);
+        handheldItem(ModItems.FROSTSTEEL_SPEAR);
+        handheldItem(ModItems.FROSTSTEEL_KNIFE);
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = JalnyrsWeaponary.MOD_ID; // Change this to your mod id
@@ -92,5 +113,11 @@ public class ModItemModelProvider extends ItemModelProvider {
                                         "item/" + itemRegistryObject.getId().getPath()));
             });
         }
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(JalnyrsWeaponary.MOD_ID,"item/" + item.getId().getPath()));
     }
 }

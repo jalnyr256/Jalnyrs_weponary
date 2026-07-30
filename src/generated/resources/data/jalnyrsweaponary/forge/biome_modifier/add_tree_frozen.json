@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#forge:is_cold",
+  "biomes": "#minecraft:is_overworld",
   "features": "jalnyrsweaponary:frozen_placed",
   "step": "vegetal_decoration"
 }

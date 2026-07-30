@@ -55,56 +55,72 @@ public class OldManEntity extends AgeableMob {
         if (!sentMessage) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.1.message"));
-                sentMessage = true;
+                if (level().isClientSide) {
+                    sentMessage = true;
+                }
             }
             sentMessage2 = false;
         }
         else if (!sentMessage2) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.2.message"));
-                sentMessage2 = true;
+                if (level().isClientSide) {
+                    sentMessage2 = true;
+                }
             }
             sentMessage3 = false;
         }
         else if (!sentMessage3) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.3.message"));
-                sentMessage3 = true;
+                if (level().isClientSide) {
+                    sentMessage3 = true;
+                }
             }
             sentMessage4 = false;
         }
         else if (!sentMessage4) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.4.message"));
-                sentMessage4 = true;
+                if (level().isClientSide) {
+                    sentMessage4 = true;
+                }
             }
             sentMessage5 = false;
         }
         else if (!sentMessage5) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.5.message"));
-                sentMessage5 = true;
+                if (level().isClientSide) {
+                    sentMessage5 = true;
+                }
             }
             sentMessage6 = false;
         }
         else if (!sentMessage6) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.6.message"));
-                sentMessage6 = true;
+                if (level().isClientSide) {
+                    sentMessage6 = true;
+                }
             }
             sentMessage7 = false;
         }
         else if (!sentMessage7) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.7.message"));
-                sentMessage7 = true;
+                if (level().isClientSide) {
+                    sentMessage7 = true;
+                }
             }
             sentMessage8 = false;
         }
         else if (!sentMessage8) {
             if (level().isClientSide) {
                 pPlayer.sendSystemMessage(Component.translatable("message.jalnyrsweaponary.8.message"));
-                sentMessage8 = true;
+                if (level().isClientSide) {
+                    sentMessage8 = true;
+                }
             }
         }
         else {
