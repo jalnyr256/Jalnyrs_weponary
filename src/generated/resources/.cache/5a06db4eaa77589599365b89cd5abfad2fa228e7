@@ -1,4 +1,4 @@
-// 1.20.1	2026-07-30T13:01:39.295885005	Item Models: jalnyrsweaponary
+// 1.20.1	2026-07-30T16:42:02.3132441	Item Models: jalnyrsweaponary
 3fa5b7d7577cbec3bd7167ae4ed05fba56aa85de assets/jalnyrsweaponary/models/item/bloody_gemstone.json
 ffbe90c84700db8c52f3733b6cece54d30b8f5a2 assets/jalnyrsweaponary/models/item/fiery_gemstone.json
 fe904da028285d52931accd194ffcf56ae01d25a assets/jalnyrsweaponary/models/item/flamemetal_ingot.json
@@ -15,6 +15,7 @@ fece3e88f5c708017f0f8b862071981b41cd9772 assets/jalnyrsweaponary/models/item/fro
 b55fdb37879a4340e3e2199edf84e1299367b792 assets/jalnyrsweaponary/models/item/frozen_sapling.json
 d8ca749b0f3ee76b99da86e30dea61de0c8ec314 assets/jalnyrsweaponary/models/item/frozen_stick.json
 9e1604c3960a256ca939ff7892bc7a3082e20147 assets/jalnyrsweaponary/models/item/jurassic_leaf.json
+4f278e114d4bf2d4050dce0b000dc79c72b785f1 assets/jalnyrsweaponary/models/item/jurassic_smithing_template.json
 42e95a59a402313bb808b6baa010cbed92733598 assets/jalnyrsweaponary/models/item/raw_flamemetal.json
 c3f2478a2dd5e5d5da319a1755e371301c36ff3e assets/jalnyrsweaponary/models/item/raw_froststeel.json
 c4e9bf9e9657218fccdf5192d87d4f82c2f3d320 assets/jalnyrsweaponary/models/item/simple_knight_boots.json

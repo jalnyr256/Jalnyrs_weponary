@@ -1,4 +1,7 @@
-// 1.20.1	2026-07-30T11:49:07.553236187	Tags for minecraft:item mod id jalnyrsweaponary
+// 1.20.1	2026-07-30T16:42:02.312063559	Tags for minecraft:item mod id jalnyrsweaponary
 8fd1942f508b69e5dbe47590deec72826ce8fec0 data/minecraft/tags/items/logs_that_burn.json
 7621af464e066f214d77f45a3372d29a81c66755 data/minecraft/tags/items/planks.json
+86fd2c8e81add5dc6960468a88d72a2acbe5190d data/minecraft/tags/items/swords.json
+6744a669d54632593f3fde1b77d7574e172a60fe data/minecraft/tags/items/trim_materials.json
+4815c4d7f67b6587505333cec76aff3044115273 data/minecraft/tags/items/trim_templates.json
 1d27bfff67894c6d285fbd0cf6662606c8c2e2b3 data/minecraft/tags/items/trimmable_armor.json

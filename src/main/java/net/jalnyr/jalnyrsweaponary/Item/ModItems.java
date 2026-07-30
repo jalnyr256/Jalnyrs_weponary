@@ -30,6 +30,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> JURASSIC_LEAF = ITEMS.register("jurassic_leaf",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> JURASSIC_SMITHING_TEMPLATE = ITEMS.register("jurassic_smithing_template",
+            ()-> new Item(new Item.Properties()));
 
 
     public static final RegistryObject<Item> FROSTSTEEL_SWORD = ITEMS.register("froststeel_sword",
@@ -84,6 +86,9 @@ public class ModItems {
             ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> TRIASSIC_BLADE = ITEMS.register("triassic_blade",
             ()-> new SwordItem(ModToolTiers.SCALE, 13, -3F, new Item.Properties()));
+    public static final RegistryObject<Item> JURASSIC_BLADE = ITEMS.register("jurassic_blade",
+            ()-> new SwordItem(ModToolTiers.SCALE, 14, -3F, new Item.Properties()));
+
 
 
     public static final RegistryObject<Item> FIERY_GEMSTONE = ITEMS.register("fiery_gemstone",

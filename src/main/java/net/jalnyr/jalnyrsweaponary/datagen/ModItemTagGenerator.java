@@ -9,6 +9,7 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
@@ -38,6 +39,20 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.TRIASSIC_SCALE_CHESTPLATE.get(),
                         ModItems.TRIASSIC_SCALE_LEGGINGS.get(),
                         ModItems.TRIASSIC_SCALE_BOOTS.get());
+        this.tag(ItemTags.SWORDS)
+                .add(ModItems.SIMPLE_KNIGHT_SWORD.get(),
+                        ModItems.BLOODY_KNIGHT_SWORD.get(),
+                        ModItems.SPEEDY_KNIGHT_SWORD.get(),
+                        ModItems.FROSTSTEEL_GREATSWORD.get(),
+                        ModItems.FLAMEMETAL_SWORD.get(),
+                        ModItems.FROSTY_KNIGHT_SWORD.get(),
+                        ModItems.JURASSIC_BLADE.get(),
+                        ModItems.TRIASSIC_BLADE.get());
+        this.tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.TRIASSIC_SCALE.get(),
+                        ModItems.JURASSIC_LEAF.get());
+        this.tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
 
     }
 }

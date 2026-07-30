@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "jalnyrsweaponary:jurassic_leaf"
+  },
+  "base": {
+    "item": "jalnyrsweaponary:triassic_blade"
+  },
+  "result": {
+    "item": "jalnyrsweaponary:jurassic_blade"
+  },
+  "template": {
+    "item": "jalnyrsweaponary:jurassic_smithing_template"
+  }
+}

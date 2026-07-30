@@ -50,6 +50,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TRIASSIC_SCALE_LEGGINGS);
         trimmedArmorItem(ModItems.TRIASSIC_SCALE_HELMET);
         basicItem(ModItems.TRIASSIC_SCALE.get());
+        basicItem(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
         basicItem(ModItems.JURASSIC_LEAF.get());
         basicItem(ModItems.RAW_FROSTSTEEL.get());
         basicItem(ModItems.RAW_FLAMEMETAL.get());
