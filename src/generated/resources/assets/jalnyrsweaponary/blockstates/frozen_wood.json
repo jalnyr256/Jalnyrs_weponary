@@ -1,7 +1,7 @@
 {
   "variants": {
     "axis=x": {
-      "model": "jalnyrsweaponary:block/frozen_wood",
+      "model": "jalnyrsweaponary:block/frozen_wood_horizontal",
       "x": 90,
       "y": 90
     },
@@ -9,7 +9,7 @@
       "model": "jalnyrsweaponary:block/frozen_wood"
     },
     "axis=z": {
-      "model": "jalnyrsweaponary:block/frozen_wood",
+      "model": "jalnyrsweaponary:block/frozen_wood_horizontal",
       "x": 90
     }
   }

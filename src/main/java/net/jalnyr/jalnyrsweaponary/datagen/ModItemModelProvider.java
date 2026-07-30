@@ -2,6 +2,7 @@ package net.jalnyr.jalnyrsweaponary.datagen;
 
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
@@ -10,6 +11,7 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.armortrim.TrimMaterial;
 import net.minecraft.world.item.armortrim.TrimMaterials;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -66,6 +68,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FROSTSTEEL_KATANA);
         handheldItem(ModItems.FROSTSTEEL_SWORD);
         handheldItem(ModItems.FROSTSTEEL_SPEAR);
+        saplingItem(ModBlocks.FROZEN_SAPLING);
         handheldItem(ModItems.FROSTSTEEL_KNIFE);
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
@@ -115,6 +118,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         }
     }
 
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(JalnyrsWeaponary.MOD_ID,"block/" + item.getId().getPath()));
+    }
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/handheld")).texture("layer0",
