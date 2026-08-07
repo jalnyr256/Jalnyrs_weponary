@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -43,6 +44,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModItems.SIMPLE_KNIGHT_SWORD.get(),
                         ModItems.BLOODY_KNIGHT_SWORD.get(),
                         ModItems.SPEEDY_KNIGHT_SWORD.get(),
+                        ModItems.FIERY_KNIGHT_SWORD.get(),
                         ModItems.FROSTSTEEL_GREATSWORD.get(),
                         ModItems.FLAMEMETAL_SWORD.get(),
                         ModItems.FROSTY_KNIGHT_SWORD.get(),
@@ -50,9 +52,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.TRIASSIC_BLADE.get());
         this.tag(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.TRIASSIC_SCALE.get(),
+                        ModItems.SPEEDY_GEMSTONE.get(),
+                        ModItems.FROSTY_GEMSTONE.get(),
+                        ModItems.BLOODY_GEMSTONE.get(),
+                        ModItems.FIERY_GEMSTONE.get(),
                         ModItems.JURASSIC_LEAF.get());
         this.tag(ItemTags.TRIM_TEMPLATES)
-                .add(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
-
+                .add(ModItems.JURASSIC_SMITHING_TEMPLATE.get(),
+                        ModItems.KNIGHT_SMITHING_TEMPLATE.get());
     }
 }

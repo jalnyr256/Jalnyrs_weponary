@@ -2,9 +2,11 @@ package net.jalnyr.jalnyrsweaponary.Item;
 
 import net.jalnyr.jalnyrsweaponary.Item.custom.*;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -59,6 +61,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SIMPLE_KNIGHT_SWORD = ITEMS.register("simple_knight_sword",
             ()-> new KnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> KNIGHT_SMITHING_TEMPLATE = ITEMS.register("knight_smithing_template",
+            ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FROSTY_KNIGHT_SWORD = ITEMS.register("frosty_knight_sword",
             ()-> new FrostyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
@@ -66,6 +70,8 @@ public class ModItems {
             ()-> new BloodyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> SPEEDY_KNIGHT_SWORD = ITEMS.register("speedy_knight_sword",
             ()-> new SpeedyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> FIERY_KNIGHT_SWORD = ITEMS.register("fiery_knight_sword",
+            ()-> new FieryKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
 
     public static final RegistryObject<Item> SIMPLE_KNIGHT_HELMET = ITEMS.register("simple_knight_helmet",
             ()-> new ModArmorItem(ModArmorMaterials.SIMPLE_KNIGHT_ARMOR, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -99,6 +105,9 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> FROSTY_GEMSTONE = ITEMS.register("frosty_gemstone",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KNIGHT_SPAWN_EGG = ITEMS.register("knight_spawn_egg",
+            ()-> new ForgeSpawnEggItem(ModEntities.KNIGHT, 0xFFFFFF, 0x000000, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -43,11 +43,13 @@
 
   "item.jalnyrsweaponary.jurassic_blade": "Jurassic Blade",
   "item.jalnyrsweaponary.jurassic_smithing_template": "Jurassic Smithing Template",
+  "item.jalnyrsweaponary.knight_smithing_template": "Knight Smithing Template",
 
   "item.jalnyrsweaponary.simple_knight_sword": "Simple Knight Sword",
   "item.jalnyrsweaponary.frosty_knight_sword": "Frosty Knight Sword",
   "item.jalnyrsweaponary.bloody_knight_sword": "Bloody Knight Sword",
   "item.jalnyrsweaponary.speedy_knight_sword": "Speedy Knight Sword",
+  "item.jalnyrsweaponary.fiery_knight_sword": "Fiery Knight Sword",
 
   "item.jalnyrsweaponary.bloody_gemstone": "Bloody Gemstone",
   "item.jalnyrsweaponary.fiery_gemstone": "Fiery Gemstone",
@@ -70,6 +72,7 @@
   "tooltip.jalnyrsweaponary.frosty_knight_sword.tooltip": "§3§lFreezes targets",
   "tooltip.jalnyrsweaponary.speedy_knight_sword.tooltip": "§3§lMakes you faster when hitting a target",
   "tooltip.jalnyrsweaponary.bloody_knight_sword.tooltip": "§6§lDeals more damage the less health you have",
+  "tooltip.jalnyrsweaponary.fiery_knight_sword.tooltip": "§6§lInflicts targets on fire",
 
 
   "creativetab.jalnyrsweaponary": "Jalnyr's Weaponary"

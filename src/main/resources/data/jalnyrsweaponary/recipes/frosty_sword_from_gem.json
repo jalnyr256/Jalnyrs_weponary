@@ -1,18 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern": [
-    "#x"
-  ],
-  "key": {
-    "#": {
-      "item": "jalnyrsweaponary:simple_knight_sword"
-    },
-    "x": {
-      "item": "jalnyrsweaponary:frosty_gemstone"
-    }
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "jalnyrsweaponary:frosty_gemstone"
+  },
+  "base": {
+    "item": "jalnyrsweaponary:simple_knight_sword"
   },
   "result": {
     "item": "jalnyrsweaponary:frosty_knight_sword"
+  },
+  "template": {
+    "item": "jalnyrsweaponary:knight_smithing_template"
   }
 }

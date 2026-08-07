@@ -51,6 +51,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.TRIASSIC_SCALE_HELMET);
         basicItem(ModItems.TRIASSIC_SCALE.get());
         basicItem(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
+        basicItem(ModItems.KNIGHT_SMITHING_TEMPLATE.get());
         basicItem(ModItems.JURASSIC_LEAF.get());
         basicItem(ModItems.RAW_FROSTSTEEL.get());
         basicItem(ModItems.RAW_FLAMEMETAL.get());
@@ -71,6 +72,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FROSTSTEEL_SPEAR);
         saplingItem(ModBlocks.FROZEN_SAPLING);
         handheldItem(ModItems.FROSTSTEEL_KNIFE);
+        withExistingParent(ModItems.KNIGHT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = JalnyrsWeaponary.MOD_ID; // Change this to your mod id

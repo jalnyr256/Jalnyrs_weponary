@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "jalnyrsweaponary:bloody_gemstone"
+    "item": "jalnyrsweaponary:fiery_gemstone"
   },
   "base": {
     "item": "jalnyrsweaponary:simple_knight_sword"
   },
   "result": {
-    "item": "jalnyrsweaponary:bloody_knight_sword"
+    "item": "jalnyrsweaponary:fiery_knight_sword"
   },
   "template": {
     "item": "jalnyrsweaponary:knight_smithing_template"
