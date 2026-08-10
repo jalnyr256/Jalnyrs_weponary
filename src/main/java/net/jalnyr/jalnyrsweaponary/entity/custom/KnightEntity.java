@@ -9,6 +9,8 @@ import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.Difficulty;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -22,10 +24,16 @@ import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.TargetGoal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.block.Blocks;
 import org.jetbrains.annotations.Nullable;
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoField;
 
 public class KnightEntity extends Monster {
     private static final EntityDataAccessor<Boolean> ATTACKING =
@@ -33,6 +41,7 @@ public class KnightEntity extends Monster {
 
     public KnightEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
+        this.reassessWeaponGoal();
     }
 
     public final AnimationState idleAnimationState = new AnimationState();
@@ -138,46 +147,37 @@ public class KnightEntity extends Monster {
     protected float getEquipmentDropChance(EquipmentSlot pSlot) {
         return 0.1f;
     }
-
-    @Override
-    public ItemStack equipItemIfPossible(ItemStack pStack) {
-        return new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get());
+    protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
+        super.populateDefaultEquipmentSlots(pRandom, pDifficulty);
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get()));
     }
 
     @Override
-    public ItemStack getOffhandItem() {
-        return new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get());
-    }
-
-    @Override
-    public void setItemSlot(EquipmentSlot pSlot, ItemStack pStack) {
-        super.setItemSlot(EquipmentSlot.OFFHAND, new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get()));
-    }
-
-    @Override
-    public boolean hasItemInSlot(EquipmentSlot pSlot) {
-        return true;
-    }
     @javax.annotation.Nullable
-    public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34088_, DifficultyInstance p_34089_, MobSpawnType p_34090_, @javax.annotation.Nullable SpawnGroupData p_34091_, @javax.annotation.Nullable CompoundTag p_34092_) {
-        SpawnGroupData spawngroupdata = super.finalizeSpawn(p_34088_, p_34089_, p_34090_, p_34091_, p_34092_);
-        this.setItemSlot(EquipmentSlot.OFFHAND, this.createSpawnWeapon());
-        return spawngroupdata;
+    public SpawnGroupData finalizeSpawn(ServerLevelAccessor pLevel, DifficultyInstance pDifficulty, MobSpawnType pReason, @javax.annotation.Nullable SpawnGroupData pSpawnData, @javax.annotation.Nullable CompoundTag pDataTag) {
+        pSpawnData = super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
+        RandomSource randomsource = pLevel.getRandom();
+        this.populateDefaultEquipmentSlots(randomsource, pDifficulty);
+        this.populateDefaultEquipmentEnchantments(randomsource, pDifficulty);
+        this.setCanPickUpLoot(randomsource.nextFloat() < 0.55F * pDifficulty.getSpecialMultiplier());
+
+        return pSpawnData;
+    }
+    public void reassessWeaponGoal() {
+        if (!this.level().isClientSide) {
+            ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
+        }
+    }
+    public void readAdditionalSaveData(CompoundTag pCompound) {
+        super.readAdditionalSaveData(pCompound);
+        this.reassessWeaponGoal();
     }
 
-    private ItemStack createSpawnWeapon() {
-        return new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get());
-    }
+    public void setItemSlot(EquipmentSlot pSlot, ItemStack pStack) {
+        super.setItemSlot(pSlot, pStack);
+        if (!this.level().isClientSide) {
+            this.reassessWeaponGoal();
+        }
 
-    public void addAdditionalSaveData(CompoundTag compound) {
-        super.addAdditionalSaveData(compound);
-    }
-
-    public void readAdditionalSaveData(CompoundTag compound) {
-        super.readAdditionalSaveData(compound);
-    }
-    @Override
-    public void setItemInHand(InteractionHand pHand, ItemStack pStack) {
-        super.setItemInHand(InteractionHand.OFF_HAND, new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get()));
     }
 }

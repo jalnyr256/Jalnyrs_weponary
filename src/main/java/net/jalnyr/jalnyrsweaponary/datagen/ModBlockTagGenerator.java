@@ -32,6 +32,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.FLAMEMETAl_ORE.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.FROSTSTEEL_BLOCK.get())
+                .add(ModBlocks.ANCIENT_STONE_BRICKS.get())
                 .add(ModBlocks.FROSTSTEEL_ORE.get())
                 .add(ModBlocks.FLAMEMETAl_ORE.get());
     }

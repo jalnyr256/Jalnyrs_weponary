@@ -21,6 +21,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.FROSTSTEEL_BLOCK);
+        blockWithItem(ModBlocks.ANCIENT_STONE_BRICKS);
+
         blockWithItem(ModBlocks.FROSTSTEEL_ORE);
         blockWithItem(ModBlocks.FLAMEMETAl_ORE);
         logBlock(((RotatedPillarBlock) ModBlocks.FROZEN_LOG.get()));
