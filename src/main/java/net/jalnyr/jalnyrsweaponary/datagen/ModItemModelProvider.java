@@ -60,6 +60,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.FROSTSTEEL_INGOT.get());
 
         basicItem(ModItems.SPEEDY_GEMSTONE.get());
+        basicItem(ModItems.KNIGHT_FRAGMENT.get());
+        basicItem(ModItems.KNIGHT_INGOT.get());
         basicItem(ModItems.FIERY_GEMSTONE.get());
         basicItem(ModItems.BLOODY_GEMSTONE.get());
         basicItem(ModItems.FROSTY_GEMSTONE.get());

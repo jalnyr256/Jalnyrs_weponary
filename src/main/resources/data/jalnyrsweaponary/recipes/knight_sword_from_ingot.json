@@ -4,14 +4,17 @@
   "pattern": [
     "#",
     "#",
-    "#"
+    "x"
   ],
   "key": {
     "#": {
-      "item": "jalnyrsweaponary:frozen_planks"
+      "item": "jalnyrsweaponary:knight_ingot"
+    },
+    "x": {
+      "item": "minecraft:stick"
     }
   },
     "result": {
-      "item": "jalnyrsweaponary:frozen_stick"
+      "item": "jalnyrsweaponary:simple_knight_sword"
     }
 }

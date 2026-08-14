@@ -48,6 +48,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SPEEDY_GEMSTONE.get());
                         pOutput.accept(ModItems.KNIGHT_SMITHING_TEMPLATE.get());
                         pOutput.accept(ModItems.KNIGHT_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.KNIGHT_FRAGMENT.get());
+                        pOutput.accept(ModItems.KNIGHT_INGOT.get());
 
                         pOutput.accept(ModItems.FROSTSTEEL_INGOT.get());
                         pOutput.accept(ModItems.RAW_FROSTSTEEL.get());
@@ -63,6 +65,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.STRIPPED_FROZEN_LOG.get());
                         pOutput.accept(ModBlocks.FROZEN_PLANKS.get());
                         pOutput.accept(ModBlocks.FROZEN_SAPLING.get());
+                        pOutput.accept(ModBlocks.ANCIENT_STONE_BRICKS.get());
 
                         pOutput.accept(ModItems.TRIASSIC_SCALE.get());
                         pOutput.accept(ModItems.TRIASSIC_SCALE_BOOTS.get());

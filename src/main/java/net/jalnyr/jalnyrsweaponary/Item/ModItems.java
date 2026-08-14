@@ -63,6 +63,10 @@ public class ModItems {
             ()-> new KnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> KNIGHT_SMITHING_TEMPLATE = ITEMS.register("knight_smithing_template",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KNIGHT_FRAGMENT = ITEMS.register("knight_fragment",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KNIGHT_INGOT = ITEMS.register("knight_ingot",
+            ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FROSTY_KNIGHT_SWORD = ITEMS.register("frosty_knight_sword",
             ()-> new FrostyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
