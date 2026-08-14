@@ -9,6 +9,7 @@ public class ModModelLayers {
             new ResourceLocation(JalnyrsWeaponary.MOD_ID, "old_man_layer"), "main");
     public static final ModelLayerLocation KNIGHT_LAYER = new ModelLayerLocation(
             new ResourceLocation(JalnyrsWeaponary.MOD_ID, "knight_layer"), "main");
-
+    public static final ModelLayerLocation ELITE_KNIGHT_LAYER = new ModelLayerLocation(
+            new ResourceLocation(JalnyrsWeaponary.MOD_ID, "elite_knight_layer"), "main");
 
 }

@@ -7,6 +7,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import net.jalnyr.jalnyrsweaponary.entity.animations.ModAnimationDefinitions;
 import net.jalnyr.jalnyrsweaponary.entity.custom.KnightEntity;
+import net.minecraft.client.model.ArmedModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
@@ -21,7 +22,7 @@ import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
-public class KnightModel<T extends Entity> extends HierarchicalModel<T> {
+public class KnightModel<T extends Entity> extends HierarchicalModel<T> implements ArmedModel {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("modid", "knight"), "main");
 	private final ModelPart knight;
@@ -88,16 +89,16 @@ public class KnightModel<T extends Entity> extends HierarchicalModel<T> {
     public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
         knight.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
     }
-
+    @Override
     public void translateToHand(HumanoidArm arm, PoseStack poseStack) {
-        knight.translateAndRotate(poseStack);
         body.translateAndRotate(poseStack);
+        torso.translateAndRotate(poseStack);
         if (arm == HumanoidArm.RIGHT) {
             arm1.translateAndRotate(poseStack);
             poseStack.translate(0.0F, 0.0F, 0.0F);
         } else {
-            arm2.translateAndRotate(poseStack);
-            poseStack.translate(0.0F, 0.0F, 0.0F);
+           arm2.translateAndRotate(poseStack);
+           poseStack.translate(0.0F, 0.0F, 0.0F);
         }
     }
 

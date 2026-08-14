@@ -5,6 +5,7 @@ import net.jalnyr.jalnyrsweaponary.Item.ModCreativeModeTabs;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
+import net.jalnyr.jalnyrsweaponary.entity.client.EliteKnightRenderer;
 import net.jalnyr.jalnyrsweaponary.entity.client.KnightRenderer;
 import net.jalnyr.jalnyrsweaponary.entity.client.OldManRenderer;
 import net.jalnyr.jalnyrsweaponary.loot.ModLootModifiers;
@@ -78,6 +79,7 @@ public class JalnyrsWeaponary
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.OLD_MAN.get(), OldManRenderer::new);
             EntityRenderers.register(ModEntities.KNIGHT.get(), KnightRenderer::new);
+            EntityRenderers.register(ModEntities.ELITE_KNIGHT.get(), EliteKnightRenderer::new);
         }
     }
 }

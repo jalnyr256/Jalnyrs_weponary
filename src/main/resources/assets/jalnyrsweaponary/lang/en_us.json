@@ -78,6 +78,8 @@
   "tooltip.jalnyrsweaponary.bloody_knight_sword.tooltip": "§6§lDeals more damage the less health you have",
   "tooltip.jalnyrsweaponary.fiery_knight_sword.tooltip": "§6§lInflicts targets on fire",
 
+  "entity.jalnyrsweaponary.knight": "Knight",
+  "entity.jalnyrsweaponary.old_man": "Old Man",
 
   "creativetab.jalnyrsweaponary": "Jalnyr's Weaponary"
 }

@@ -41,7 +41,6 @@ public class KnightEntity extends Monster {
 
     public KnightEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
-        this.reassessWeaponGoal();
     }
 
     public final AnimationState idleAnimationState = new AnimationState();
@@ -58,6 +57,9 @@ public class KnightEntity extends Monster {
         if(this.level().isClientSide()) {
             setupAnimationStates();
         }
+    }
+    public HumanoidArm getMainArm() {
+        return HumanoidArm.LEFT;
     }
 
     private void setupAnimationStates() {
@@ -147,37 +149,15 @@ public class KnightEntity extends Monster {
     protected float getEquipmentDropChance(EquipmentSlot pSlot) {
         return 0.1f;
     }
-    protected void populateDefaultEquipmentSlots(RandomSource pRandom, DifficultyInstance pDifficulty) {
-        super.populateDefaultEquipmentSlots(pRandom, pDifficulty);
+    protected void populateDefaultEquipmentSlots(RandomSource p_219154_, DifficultyInstance p_219155_) {
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(ModItems.SIMPLE_KNIGHT_SWORD.get()));
     }
-
-    @Override
     @javax.annotation.Nullable
-    public SpawnGroupData finalizeSpawn(ServerLevelAccessor pLevel, DifficultyInstance pDifficulty, MobSpawnType pReason, @javax.annotation.Nullable SpawnGroupData pSpawnData, @javax.annotation.Nullable CompoundTag pDataTag) {
-        pSpawnData = super.finalizeSpawn(pLevel, pDifficulty, pReason, pSpawnData, pDataTag);
-        RandomSource randomsource = pLevel.getRandom();
-        this.populateDefaultEquipmentSlots(randomsource, pDifficulty);
-        this.populateDefaultEquipmentEnchantments(randomsource, pDifficulty);
-        this.setCanPickUpLoot(randomsource.nextFloat() < 0.55F * pDifficulty.getSpecialMultiplier());
-
-        return pSpawnData;
-    }
-    public void reassessWeaponGoal() {
-        if (!this.level().isClientSide) {
-            ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
-        }
-    }
-    public void readAdditionalSaveData(CompoundTag pCompound) {
-        super.readAdditionalSaveData(pCompound);
-        this.reassessWeaponGoal();
+    public SpawnGroupData finalizeSpawn(ServerLevelAccessor p_34088_, DifficultyInstance p_34089_, MobSpawnType p_34090_, @javax.annotation.Nullable SpawnGroupData p_34091_, @javax.annotation.Nullable CompoundTag p_34092_) {
+        SpawnGroupData spawngroupdata = super.finalizeSpawn(p_34088_, p_34089_, p_34090_, p_34091_, p_34092_);
+        RandomSource randomsource = p_34088_.getRandom();
+        this.populateDefaultEquipmentSlots(randomsource, p_34089_);
+        return spawngroupdata;
     }
 
-    public void setItemSlot(EquipmentSlot pSlot, ItemStack pStack) {
-        super.setItemSlot(pSlot, pStack);
-        if (!this.level().isClientSide) {
-            this.reassessWeaponGoal();
-        }
-
-    }
 }

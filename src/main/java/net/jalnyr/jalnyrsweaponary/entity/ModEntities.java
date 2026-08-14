@@ -1,6 +1,7 @@
 package net.jalnyr.jalnyrsweaponary.entity;
 
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.entity.custom.EliteKnightEntity;
 import net.jalnyr.jalnyrsweaponary.entity.custom.KnightEntity;
 import net.jalnyr.jalnyrsweaponary.entity.custom.OldManEntity;
 import net.minecraft.world.entity.EntityType;
@@ -20,6 +21,9 @@ public class ModEntities {
     public static final RegistryObject<EntityType<KnightEntity>> KNIGHT =
             ENTITY_TYPES.register("knight", ()-> EntityType.Builder.of(KnightEntity::new, MobCategory.MONSTER)
                     .sized(1f, 2f).build("knight"));
+    public static final RegistryObject<EntityType<EliteKnightEntity>> ELITE_KNIGHT =
+            ENTITY_TYPES.register("elite_knight", ()-> EntityType.Builder.of(EliteKnightEntity::new, MobCategory.MONSTER)
+                    .sized(1.2f, 3f).build("elite_knight"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
