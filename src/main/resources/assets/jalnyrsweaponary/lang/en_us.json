@@ -51,6 +51,7 @@
   "item.jalnyrsweaponary.bloody_knight_sword": "Bloody Knight Sword",
   "item.jalnyrsweaponary.speedy_knight_sword": "Speedy Knight Sword",
   "item.jalnyrsweaponary.fiery_knight_sword": "Fiery Knight Sword",
+  "item.jalnyrsweaponary.elite_knight_sword": "Elite Knight Sword",
 
   "item.jalnyrsweaponary.bloody_gemstone": "Bloody Gemstone",
   "item.jalnyrsweaponary.fiery_gemstone": "Fiery Gemstone",
@@ -59,6 +60,7 @@
   "item.jalnyrsweaponary.knight_fragment": "Knight Fragment",
   "item.jalnyrsweaponary.knight_ingot": "Knight Ingot",
   "item.jalnyrsweaponary.knight_spawn_egg": "Knight Spawn Egg",
+  "item.jalnyrsweaponary.elite_knight_spawn_egg": "Elite Knight Spawn Egg",
 
   "message.jalnyrsweaponary.1.message": "§l§3Old Man: Hello traveler.",
   "message.jalnyrsweaponary.2.message": "Old Man: Im an old man that has been living here for a long time.",
@@ -79,6 +81,7 @@
   "tooltip.jalnyrsweaponary.fiery_knight_sword.tooltip": "§6§lInflicts targets on fire",
 
   "entity.jalnyrsweaponary.knight": "Knight",
+  "entity.jalnyrsweaponary.elite_knight": "Elite Knight",
   "entity.jalnyrsweaponary.old_man": "Old Man",
 
   "creativetab.jalnyrsweaponary": "Jalnyr's Weaponary"

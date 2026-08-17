@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "jalnyrsweaponary:item/elite_knight_sword2d"
+  }
+}

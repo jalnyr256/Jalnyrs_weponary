@@ -42,12 +42,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.BLOODY_KNIGHT_SWORD.get());
                         pOutput.accept(ModItems.SPEEDY_KNIGHT_SWORD.get());
                         pOutput.accept(ModItems.FIERY_KNIGHT_SWORD.get());
+                        pOutput.accept(ModItems.ELITE_KNIGHT_SWORD.get());
                         pOutput.accept(ModItems.FIERY_GEMSTONE.get());
                         pOutput.accept(ModItems.FROSTY_GEMSTONE.get());
                         pOutput.accept(ModItems.BLOODY_GEMSTONE.get());
                         pOutput.accept(ModItems.SPEEDY_GEMSTONE.get());
                         pOutput.accept(ModItems.KNIGHT_SMITHING_TEMPLATE.get());
                         pOutput.accept(ModItems.KNIGHT_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.ELITE_KNIGHT_SPAWN_EGG.get());
                         pOutput.accept(ModItems.KNIGHT_FRAGMENT.get());
                         pOutput.accept(ModItems.KNIGHT_INGOT.get());
 

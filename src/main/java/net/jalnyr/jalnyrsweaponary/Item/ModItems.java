@@ -61,6 +61,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SIMPLE_KNIGHT_SWORD = ITEMS.register("simple_knight_sword",
             ()-> new KnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));
+    public static final RegistryObject<Item> ELITE_KNIGHT_SWORD = ITEMS.register("elite_knight_sword",
+            ()-> new KnightSwordItem(ModToolTiers.KNIGHT, 4, -2.2F, new Item.Properties()));
     public static final RegistryObject<Item> KNIGHT_SMITHING_TEMPLATE = ITEMS.register("knight_smithing_template",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> KNIGHT_FRAGMENT = ITEMS.register("knight_fragment",
@@ -111,6 +113,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> KNIGHT_SPAWN_EGG = ITEMS.register("knight_spawn_egg",
             ()-> new ForgeSpawnEggItem(ModEntities.KNIGHT, 0xFFFFFF, 0x000000, new Item.Properties()));
+    public static final RegistryObject<Item> ELITE_KNIGHT_SPAWN_EGG = ITEMS.register("elite_knight_spawn_egg",
+            ()-> new ForgeSpawnEggItem(ModEntities.ELITE_KNIGHT, 0xFFFFFF, 0x000000, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

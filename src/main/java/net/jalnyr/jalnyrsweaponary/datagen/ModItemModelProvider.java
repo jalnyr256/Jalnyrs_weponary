@@ -74,7 +74,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FROSTSTEEL_SPEAR);
         saplingItem(ModBlocks.FROZEN_SAPLING);
         handheldItem(ModItems.FROSTSTEEL_KNIFE);
+
         withExistingParent(ModItems.KNIGHT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.ELITE_KNIGHT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
         final String MOD_ID = JalnyrsWeaponary.MOD_ID; // Change this to your mod id
