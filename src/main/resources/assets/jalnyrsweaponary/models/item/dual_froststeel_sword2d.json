@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "jalnyrsweaponary:item/dual_froststeel_sword"
+    "layer0": "jalnyrsweaponary:item/dual_froststeel_sword2d"
   }
 }
