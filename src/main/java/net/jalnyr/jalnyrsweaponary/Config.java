@@ -22,10 +22,13 @@ public class Config
     private static final ForgeConfigSpec.IntValue FROZEN_TREE_SPAWN_AMOUNT = BUILDER
             .comment("Frozen tree spawning")
             .defineInRange("frozenTree", 10, 2, 10);
+    private static final ForgeConfigSpec.IntValue BLOODY_SWORD_DAMAGE_MULTIPLIER = BUILDER
+            .comment("Bloody sword damage multiplier")
+            .defineInRange("entityDamageMultiplier", 3, 1, 20);
 
     // a list of strings that are treated as resource locations for items
     static final ForgeConfigSpec SPEC = BUILDER.build();
-
+    public static int entityDamageMultiplier;
     public static int frozenTree;
 
 
@@ -33,5 +36,6 @@ public class Config
     static void onLoad(final ModConfigEvent event)
     {
         frozenTree = FROZEN_TREE_SPAWN_AMOUNT.get();
+        entityDamageMultiplier = BLOODY_SWORD_DAMAGE_MULTIPLIER.get();
     }
 }

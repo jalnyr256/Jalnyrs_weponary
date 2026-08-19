@@ -20,40 +20,17 @@ import net.minecraft.world.level.Level;
 import javax.annotation.Nullable;
 import java.util.List;
 
+import static net.jalnyr.jalnyrsweaponary.Config.entityDamageMultiplier;
+
 public class BloodyKnightSwordItem extends SwordItem {
     public BloodyKnightSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier, Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
     public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity player) {
-        if (player.getHealth() < 18D){
-            entity.hurt(entity.damageSources().generic(), 2.0F);
-        }
-        if (player.getHealth() < 16D){
-            entity.hurt(entity.damageSources().generic(), 4.0F);
-        }
-        if (player.getHealth() < 14D){
-            entity.hurt(entity.damageSources().generic(), 6.0F);
-        }
-        if (player.getHealth() < 12D){
-            entity.hurt(entity.damageSources().generic(), 8.0F);
-        }
-        if (player.getHealth() < 10D){
-            entity.hurt(entity.damageSources().generic(), 10.0F);
-        }
-        if (player.getHealth() < 8D){
-            entity.hurt(entity.damageSources().generic(), 16.0F);
-        }
-        if (player.getHealth() < 6D){
-            entity.hurt(entity.damageSources().generic(), 24.0F);
-        }
-        if (player.getHealth() < 4D){
-            entity.hurt(entity.damageSources().generic(), 30.0F);
-        }
-        if (player.getHealth() < 2D){
-            entity.hurt(entity.damageSources().generic(), 40.0F);
-        }
-        if (player.getHealth() < 1D){
-            entity.hurt(entity.damageSources().generic(), 50.0F);
+        float damage1 = player.getHealth();
+        float damage2 = player.getMaxHealth();
+        if (player.getHealth() < player.getMaxHealth()){
+            entity.hurt(entity.damageSources().generic(), (damage2-damage1)+entityDamageMultiplier);
         }
         return true;
     }
