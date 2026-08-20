@@ -49,6 +49,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.FLAMEMETAL_SWORD.get(),
                         ModItems.FROSTY_KNIGHT_SWORD.get(),
                         ModItems.JURASSIC_BLADE.get(),
+                        ModItems.ELITE_KNIGHT_SWORD.get(),
                         ModItems.TRIASSIC_BLADE.get());
         this.tag(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.TRIASSIC_SCALE.get(),

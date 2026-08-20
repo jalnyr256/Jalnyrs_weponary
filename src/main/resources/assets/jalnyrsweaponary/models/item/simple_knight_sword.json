@@ -6,13 +6,13 @@
   },
   "perspectives": {
     "gui": {
-      "parent": "jalnyrsweaponary:item/simple_knight_sword3d"
+      "parent": "jalnyrsweaponary:item/simple_knight_sword2d"
     },
     "ground": {
       "parent": "jalnyrsweaponary:item/simple_knight_sword3d"
     },
     "fixed": {
-      "parent": "jalnyrsweaponary:item/simple_knight_sword3d"
+      "parent": "jalnyrsweaponary:item/simple_knight_sword2d"
     }
   }
 }
