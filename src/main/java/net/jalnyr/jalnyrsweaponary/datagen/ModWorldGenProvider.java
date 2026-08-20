@@ -4,6 +4,8 @@ import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.worldgen.ModBiomeModifiers;
 import net.jalnyr.jalnyrsweaponary.worldgen.ModConfiguredFeatures;
 import net.jalnyr.jalnyrsweaponary.worldgen.ModPlacedFeatures;
+import net.jalnyr.jalnyrsweaponary.worldgen.biome.ModBiomes;
+import net.jalnyr.jalnyrsweaponary.worldgen.dimension.ModDimensions;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -17,9 +19,13 @@ import java.util.concurrent.CompletableFuture;
 public class ModWorldGenProvider extends DatapackBuiltinEntriesProvider {
 
     public static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
+            .add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType)
             .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap)
+            .add(Registries.BIOME, ModBiomes::boostrap)
+            .add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem)
             .add(ForgeRegistries.Keys.BIOME_MODIFIERS, ModBiomeModifiers::bootstrap);
+
 
 
     public ModWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {

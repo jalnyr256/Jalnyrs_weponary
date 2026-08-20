@@ -32,7 +32,7 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FLAMEMETAL_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
         context.register(ADD_TREE_FROZEN, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                biomes.getOrThrow(BiomeTags.IS_OCEAN),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FROZEN_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }

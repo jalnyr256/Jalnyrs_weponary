@@ -79,6 +79,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.JURASSIC_LEAF.get());
                         pOutput.accept(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
                         pOutput.accept(ModItems.JURASSIC_BLADE.get());
+                        pOutput.accept(ModBlocks.DRIED_GRASS_BLOCK.get());
                     })
                     .build());
 

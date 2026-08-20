@@ -1,0 +1,11 @@
+{
+  "type": "jalnyrsweaponary:fallendim_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "jalnyrsweaponary:snowy_biome"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

@@ -37,6 +37,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.FROZEN_WOOD);
         blockItem(ModBlocks.STRIPPED_FROZEN_LOG);
         blockItem(ModBlocks.STRIPPED_FROZEN_WOOD);
+        blockItem(ModBlocks.MOD_PORTAL);
+        blockWithItem(ModBlocks.DRIED_GRASS_BLOCK);
+
 
         blockWithItem(ModBlocks.FROZEN_PLANKS);
 

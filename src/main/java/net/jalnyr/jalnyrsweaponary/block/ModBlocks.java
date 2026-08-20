@@ -3,6 +3,7 @@ package net.jalnyr.jalnyrsweaponary.block;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.block.custom.ModFlammableRotatedPillarBlock;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
+import net.jalnyr.jalnyrsweaponary.block.custom.ModPortalBlock;
 import net.jalnyr.jalnyrsweaponary.worldgen.tree.FrozenTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,6 +29,8 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FROZEN_LOG = registerBlock("frozen_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
+            () -> new ModPortalBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICKS).noLootTable().noOcclusion().noCollission()));
     public static final RegistryObject<Block> FROSTSTEEL_BLOCK = registerBlock("froststeel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
     public static final RegistryObject<Block> FROSTSTEEL_ORE = registerBlock("froststeel_ore",
@@ -44,6 +47,8 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_FROZEN_WOOD = registerBlock("stripped_frozen_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+    public static final RegistryObject<Block> DRIED_GRASS_BLOCK = registerBlock("dried_grass_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
 
     public static final RegistryObject<Block> FROZEN_PLANKS = registerBlock("frozen_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {

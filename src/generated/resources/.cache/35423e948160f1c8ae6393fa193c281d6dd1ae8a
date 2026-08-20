@@ -1,4 +1,5 @@
-// 1.20.1	2026-08-10T15:57:17.348290328	Tags for minecraft:block mod id jalnyrsweaponary
+// 1.20.1	2026-08-20T19:50:06.980726391	Tags for minecraft:block mod id jalnyrsweaponary
+18a37227ae9e1bacf74af0ec2739cb0263d0bbfd data/minecraft/tags/blocks/dirt.json
 8fd1942f508b69e5dbe47590deec72826ce8fec0 data/minecraft/tags/blocks/logs_that_burn.json
 9959974887992d8b9ce8f81fe2f37a495f8248ff data/minecraft/tags/blocks/mineable/pickaxe.json
 aa28283e6db6bd870f16df71347dadab423b756b data/minecraft/tags/blocks/needs_diamond_tool.json
