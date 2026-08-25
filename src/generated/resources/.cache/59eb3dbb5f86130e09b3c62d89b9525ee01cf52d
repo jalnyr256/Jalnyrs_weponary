@@ -1,5 +1,8 @@
-// 1.20.1	2026-08-20T19:42:44.720075527	Loot Tables
+// 1.20.1	2026-08-25T18:51:26.580771239	Loot Tables
 847aa34ae886b73b98db1c144b9287370f3d3f72 data/jalnyrsweaponary/loot_tables/blocks/ancient_stone_bricks.json
+99f5a18766fd2565d53b8b6517b34f7b2113f0bb data/jalnyrsweaponary/loot_tables/blocks/burned_log.json
+47ca5384c1157ae787ef78a1a136a22bb3981f09 data/jalnyrsweaponary/loot_tables/blocks/burned_sapling.json
+40bda3ef7de354a0c22cce0103b5c89c3ae2466c data/jalnyrsweaponary/loot_tables/blocks/burned_wood.json
 45c5b1fdff7b28c6b8fea7a618a7bb39e38cea17 data/jalnyrsweaponary/loot_tables/blocks/dried_grass_block.json
 e409314267343d89ec72a85114d1fc0e6fa3eb50 data/jalnyrsweaponary/loot_tables/blocks/flamemetal_ore.json
 8fac4350c6b0d113410d0e8bbfa5ca66f807d033 data/jalnyrsweaponary/loot_tables/blocks/froststeel_block.json

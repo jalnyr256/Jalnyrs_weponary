@@ -1,7 +1,11 @@
 package net.jalnyr.jalnyrsweaponary.entity.custom;
 
+import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.entity.ai.EliteKnightAttackGoal;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
@@ -25,17 +29,20 @@ import org.checkerframework.checker.units.qual.A;
 import javax.annotation.Nullable;
 import java.security.cert.CertPathBuilder;
 
+import static net.jalnyr.jalnyrsweaponary.Config.entityDamageMultiplier;
+
 public class EliteKnightEntity extends Monster{
     public AnimationState idleAnimationState = new AnimationState();
     public AnimationState attackAnimationState = new AnimationState();
     public AnimationState attack2AnimationState = new AnimationState();
+    public AnimationState attack3AnimationState = new AnimationState();
+    public int attackDamageModifier = 8;
     private int attackDelay = 40;
     private int ticksUntilNextAttack = 80;
 
     public EliteKnightEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
-
 
 
     protected void registerGoals() {
@@ -55,7 +62,7 @@ public class EliteKnightEntity extends Monster{
         return Monster.createMonsterAttributes()
                 .add(Attributes.FOLLOW_RANGE, 30.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.25F)
-                .add(Attributes.ATTACK_DAMAGE, 8)
+                .add(Attributes.ATTACK_DAMAGE, 8D)
                 .add(Attributes.MAX_HEALTH, 100D)
                 .add(Attributes.ARMOR, 12)
                 .add(Attributes.ATTACK_SPEED, 0.0D)
@@ -73,6 +80,8 @@ public class EliteKnightEntity extends Monster{
             return this.attackAnimationState;
         } else if (input == "attack2") {
             return this.attack2AnimationState;
+        } else if (input == "attack3") {
+            return this.attack3AnimationState;
         } else if (input == "idle") {
             return this.idleAnimationState;
         }else {
@@ -87,9 +96,12 @@ public class EliteKnightEntity extends Monster{
 
 
 
+
     public void stopAllAnimationStates() {
         this.attackAnimationState.stop();
         this.attack2AnimationState.stop();
+        this.attack3AnimationState.stop();
+
     }
 
 
@@ -97,8 +109,10 @@ public class EliteKnightEntity extends Monster{
         if (p_219360_ == 4) {
             if(random.nextBoolean()) {
                 this.attackAnimationState.start(this.tickCount);
-            }else{
+            }else if (random.nextBoolean()){
                 this.attack2AnimationState.start(this.tickCount);
+            }else {
+                this.attack3AnimationState.start(this.tickCount);
             }
         } else {
             super.handleEntityEvent(p_219360_);
@@ -107,7 +121,9 @@ public class EliteKnightEntity extends Monster{
 
     public boolean doHurtTarget(Entity p_219472_) {
         this.level().broadcastEntityEvent(this, (byte) 4);
+        p_219472_.hurt(p_219472_.damageSources().generic(), (this.attackDamageModifier));
         return super.doHurtTarget(p_219472_);
+
     }
 
 

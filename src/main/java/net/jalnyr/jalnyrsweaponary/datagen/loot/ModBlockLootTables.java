@@ -32,10 +32,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.FROZEN_LOG.get());
         this.dropSelf(ModBlocks.DRIED_GRASS_BLOCK.get());
         this.dropSelf(ModBlocks.FROZEN_WOOD.get());
+        this.dropSelf(ModBlocks.BURNED_LOG.get());
+        this.dropSelf(ModBlocks.BURNED_WOOD.get());
         this.dropSelf(ModBlocks.STRIPPED_FROZEN_LOG.get());
         this.dropSelf(ModBlocks.STRIPPED_FROZEN_WOOD.get());
         this.dropSelf(ModBlocks.FROZEN_PLANKS.get());
         this.dropSelf(ModBlocks.FROZEN_SAPLING.get());
+        this.dropSelf(ModBlocks.BURNED_SAPLING.get());
 
         this.add(ModBlocks.FROZEN_LEAVES.get(), block ->
                 createLeavesDrops(block, ModBlocks.FROZEN_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES)); // TODO: Change to Sapling!

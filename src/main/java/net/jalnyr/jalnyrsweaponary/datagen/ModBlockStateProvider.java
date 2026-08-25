@@ -27,6 +27,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.FLAMEMETAl_ORE);
         logBlock(((RotatedPillarBlock) ModBlocks.FROZEN_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.FROZEN_WOOD.get()), blockTexture(ModBlocks.FROZEN_LOG.get()), blockTexture(ModBlocks.FROZEN_LOG.get()));
+        logBlock(((RotatedPillarBlock) ModBlocks.BURNED_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.BURNED_WOOD.get()), blockTexture(ModBlocks.BURNED_LOG.get()), blockTexture(ModBlocks.BURNED_LOG.get()));
 
         axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_FROZEN_LOG.get()), blockTexture(ModBlocks.FROZEN_LOG.get()),
                 new ResourceLocation(JalnyrsWeaponary.MOD_ID, "block/stripped_frozen_log_top"));
@@ -35,6 +37,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockItem(ModBlocks.FROZEN_LOG);
         blockItem(ModBlocks.FROZEN_WOOD);
+        blockItem(ModBlocks.BURNED_LOG);
+        blockItem(ModBlocks.BURNED_WOOD);
         blockItem(ModBlocks.STRIPPED_FROZEN_LOG);
         blockItem(ModBlocks.STRIPPED_FROZEN_WOOD);
         blockItem(ModBlocks.MOD_PORTAL);
@@ -45,6 +49,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         leavesBlock(ModBlocks.FROZEN_LEAVES);
         saplingBlock(ModBlocks.FROZEN_SAPLING);
+        saplingBlock(ModBlocks.BURNED_SAPLING);
     }
 
     private void leavesBlock(RegistryObject<Block> blockRegistryObject) {

@@ -3,12 +3,14 @@ package net.jalnyr.jalnyrsweaponary.worldgen;
 import io.netty.util.Constant;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.AirBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
@@ -24,6 +26,8 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
@@ -33,11 +37,17 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FLAMEMETAL_ORE_KEY = registerKey("flamemetal_ore");
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> FROZEN_KEY = registerKey("frozen");
+
     private static TreeConfiguration.TreeConfigurationBuilder createStraightBlobTree(Block p_195147_, Block p_195148_, int pBaseHeight, int pHeightRandA, int pHeightRandB, int p_195152_) {
         return new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(p_195147_), new StraightTrunkPlacer(pBaseHeight, pHeightRandA, pHeightRandB), BlockStateProvider.simple(p_195148_), new BlobFoliagePlacer(ConstantInt.of(p_195152_), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1));
     }
     private static TreeConfiguration.TreeConfigurationBuilder createFrozen() {
         return createStraightBlobTree(ModBlocks.FROZEN_LOG.get(), ModBlocks.FROZEN_LEAVES.get(), 4, 2, 0, 2).ignoreVines();
+    }
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BURNED_KEY = registerKey("burned");
+
+    private static TreeConfiguration.TreeConfigurationBuilder createBurned() {
+        return createStraightBlobTree(ModBlocks.BURNED_LOG.get(), Blocks.AIR, 4, 2, 0, 2).ignoreVines();
     }
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
@@ -52,6 +62,8 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_FROSTSTEEL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFroststeelOres, 9));
 
         register(context, FROZEN_KEY, Feature.TREE, createFrozen().build());
+
+        register(context, BURNED_KEY, Feature.TREE, createBurned().build());
     }
 
 

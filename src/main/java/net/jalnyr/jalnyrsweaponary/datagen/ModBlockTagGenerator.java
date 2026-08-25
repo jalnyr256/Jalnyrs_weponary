@@ -23,6 +23,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.FROZEN_WOOD.get())
                 .add(ModBlocks.STRIPPED_FROZEN_LOG.get())
                 .add(ModBlocks.STRIPPED_FROZEN_WOOD.get());
+        this.tag(BlockTags.LOGS)
+                .add(ModBlocks.BURNED_LOG.get())
+                .add(ModBlocks.BURNED_WOOD.get());
 
         this.tag(BlockTags.PLANKS)
                 .add(ModBlocks.FROZEN_PLANKS.get());

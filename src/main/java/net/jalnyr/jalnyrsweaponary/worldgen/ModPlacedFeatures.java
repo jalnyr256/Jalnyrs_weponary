@@ -26,6 +26,8 @@ public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> FROZEN_PLACED_KEY = registerKey("frozen_placed");
 
+    public static final ResourceKey<PlacedFeature> BURNED_PLACED_KEY = registerKey("burned_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -40,6 +42,9 @@ public class ModPlacedFeatures {
         register(context, FROZEN_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FROZEN_KEY),
                 VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 1f, 4),
                         ModBlocks.FROZEN_SAPLING.get()));
+        register(context, BURNED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.BURNED_KEY),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(0, 1f, 4),
+                        ModBlocks.BURNED_SAPLING.get()));
     }
 
 

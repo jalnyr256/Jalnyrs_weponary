@@ -17,6 +17,7 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_FROSTSTEEL_ORE = registerKey("add_froststeel_ore");
     public static final ResourceKey<BiomeModifier> ADD_FLAMEMETAL_ORE = registerKey("add_flamemetal_ore");
     public static final ResourceKey<BiomeModifier> ADD_TREE_FROZEN = registerKey("add_tree_frozen");
+    public static final ResourceKey<BiomeModifier> ADD_TREE_BURNED = registerKey("add_tree_burned");
 
 
     public static void bootstrap(BootstapContext<BiomeModifier> context) {

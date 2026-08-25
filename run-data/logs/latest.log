@@ -1,37 +1,37 @@
-[20elok.2026 19:50:03.442] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, /home/jalmari/.gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, jalnyrsweaponary, --all, --output, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/generated/resources, --existing, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/main/resources]
-[20elok.2026 19:50:03.445] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.20 by Eclipse Adoptium; OS Linux arch amd64 version 7.0.0-29-generic
-[20elok.2026 19:50:03.496] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[20elok.2026 19:50:03.519] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/jalmari/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23116!/ Service=ModLauncher Env=CLIENT
-[20elok.2026 19:50:03.659] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.4.10/ccc533c7dd67e0983217197d7549c8b49e7ab453/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[20elok.2026 19:50:03.660] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.4.10/e9a2879fe3612ea34b9728ec2633304a1e67d480/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[20elok.2026 19:50:03.660] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.4.10/ec5cefbbc65c67302b8fac317010faab85fa14b9/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[20elok.2026 19:50:03.661] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.4.10/94dae566be650566ea9115a1414ab76bfcf5a804/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
-[20elok.2026 19:50:03.690] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[20elok.2026 19:50:04.301] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[20elok.2026 19:50:04.302] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, /home/jalmari/.gradle/caches/forge_gradle/assets, --assetIndex, 5, --mod, jalnyrsweaponary, --all, --output, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/generated/resources, --existing, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/main/resources]
-[20elok.2026 19:50:04.474] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using /home/jalmari/Desktop/mods/Jalnyr's weponary/build/createSrgToMcp/output.srg
-[20elok.2026 19:50:04.475] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using /home/jalmari/Desktop/mods/Jalnyr's weponary/build/createSrgToMcp/output.srg
-[20elok.2026 19:50:04.623] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [jalnyrsweaponary]
-[20elok.2026 19:50:06.569] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
-[20elok.2026 19:50:06.569] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
-[20elok.2026 19:50:06.579] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
-[20elok.2026 19:50:06.579] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
-[20elok.2026 19:50:06.579] [modloading-worker-0/INFO] [terrablender/]: Registered region jalnyrsweaponary:overworld to index 1 for type OVERWORLD
-[20elok.2026 19:50:06.727] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/jalmari/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23181!/assets/.mcassetsroot' uses unexpected schema
-[20elok.2026 19:50:06.727] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/jalmari/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23181!/data/.mcassetsroot' uses unexpected schema
-[20elok.2026 19:50:06.789] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[20elok.2026 19:50:06.829] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 39 ms
-[20elok.2026 19:50:06.829] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id jalnyrsweaponary
-[20elok.2026 19:50:06.901] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id jalnyrsweaponary finished after 72 ms
-[20elok.2026 19:50:06.902] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: jalnyrsweaponary
-[20elok.2026 19:50:06.918] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: jalnyrsweaponary finished after 16 ms
-[20elok.2026 19:50:06.918] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: jalnyrsweaponary
-[20elok.2026 19:50:06.966] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: jalnyrsweaponary finished after 47 ms
-[20elok.2026 19:50:06.966] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id jalnyrsweaponary
-[20elok.2026 19:50:06.967] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id jalnyrsweaponary finished after 0 ms
-[20elok.2026 19:50:06.967] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : jalnyrsweaponary
-[20elok.2026 19:50:06.969] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : jalnyrsweaponary finished after 2 ms
-[20elok.2026 19:50:06.970] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[20elok.2026 19:50:06.979] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 9 ms
-[20elok.2026 19:50:06.979] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 190 ms
-[20elok.2026 19:50:06.983] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 192, old count: 191, new count: 193, removed stale: 0, written: 1
+[25elok.2026 18:53:52.884] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, /home/jalmari/.gradle/caches/forge_gradle/assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, jalnyrsweaponary, --all, --output, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/generated/resources, --existing, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/main/resources]
+[25elok.2026 18:53:52.886] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.20 by Eclipse Adoptium; OS Linux arch amd64 version 7.0.0-30-generic
+[25elok.2026 18:53:52.936] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[25elok.2026 18:53:52.958] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/home/jalmari/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23116!/ Service=ModLauncher Env=CLIENT
+[25elok.2026 18:53:53.103] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.4.10/ccc533c7dd67e0983217197d7549c8b49e7ab453/javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[25elok.2026 18:53:53.103] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.4.10/e9a2879fe3612ea34b9728ec2633304a1e67d480/lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[25elok.2026 18:53:53.104] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.4.10/ec5cefbbc65c67302b8fac317010faab85fa14b9/mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[25elok.2026 18:53:53.105] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /home/jalmari/.gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.4.10/94dae566be650566ea9115a1414ab76bfcf5a804/fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[25elok.2026 18:53:53.138] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[25elok.2026 18:53:53.853] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[25elok.2026 18:53:53.856] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, /home/jalmari/.gradle/caches/forge_gradle/assets, --assetIndex, 5, --mod, jalnyrsweaponary, --all, --output, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/generated/resources, --existing, /home/jalmari/Desktop/mods/Jalnyr's weponary/src/main/resources]
+[25elok.2026 18:53:54.080] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using /home/jalmari/Desktop/mods/Jalnyr's weponary/build/createSrgToMcp/output.srg
+[25elok.2026 18:53:54.082] [main/INFO] [mixin/]: Remapping refMap terrablender.refmap.json using /home/jalmari/Desktop/mods/Jalnyr's weponary/build/createSrgToMcp/output.srg
+[25elok.2026 18:53:54.243] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [jalnyrsweaponary]
+[25elok.2026 18:53:56.304] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[25elok.2026 18:53:56.304] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[25elok.2026 18:53:56.313] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[25elok.2026 18:53:56.313] [modloading-worker-0/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[25elok.2026 18:53:56.313] [modloading-worker-0/INFO] [terrablender/]: Registered region jalnyrsweaponary:overworld to index 1 for type OVERWORLD
+[25elok.2026 18:53:56.478] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/jalmari/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23181!/assets/.mcassetsroot' uses unexpected schema
+[25elok.2026 18:53:56.479] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/jalmari/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23181!/data/.mcassetsroot' uses unexpected schema
+[25elok.2026 18:53:56.566] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[25elok.2026 18:53:56.598] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 32 ms
+[25elok.2026 18:53:56.598] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id jalnyrsweaponary
+[25elok.2026 18:53:56.666] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id jalnyrsweaponary finished after 67 ms
+[25elok.2026 18:53:56.666] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: jalnyrsweaponary
+[25elok.2026 18:53:56.687] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: jalnyrsweaponary finished after 21 ms
+[25elok.2026 18:53:56.687] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: jalnyrsweaponary
+[25elok.2026 18:53:56.737] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: jalnyrsweaponary finished after 49 ms
+[25elok.2026 18:53:56.737] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id jalnyrsweaponary
+[25elok.2026 18:53:56.738] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id jalnyrsweaponary finished after 0 ms
+[25elok.2026 18:53:56.738] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : jalnyrsweaponary
+[25elok.2026 18:53:56.741] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : jalnyrsweaponary finished after 2 ms
+[25elok.2026 18:53:56.741] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[25elok.2026 18:53:56.750] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 9 ms
+[25elok.2026 18:53:56.751] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 184 ms
+[25elok.2026 18:53:56.754] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 208, old count: 208, new count: 209, removed stale: 0, written: 1
