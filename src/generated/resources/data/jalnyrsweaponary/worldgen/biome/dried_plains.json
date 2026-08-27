@@ -8,18 +8,18 @@
   },
   "downfall": 0.8,
   "effects": {
-    "fog_color": 2269670,
-    "foliage_color": 13763580,
-    "grass_color": 8324092,
+    "fog_color": 16773826,
+    "foliage_color": 16769930,
+    "grass_color": 16769930,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
       "sound": "minecraft:ambient.cave",
       "tick_delay": 6000
     },
-    "sky_color": 3197208,
-    "water_color": 15216187,
-    "water_fog_color": 12524326
+    "sky_color": 16769930,
+    "water_color": 4535808,
+    "water_fog_color": 1135104
   },
   "features": [
     [],
@@ -62,8 +62,7 @@
       "minecraft:ore_lapis",
       "minecraft:ore_lapis_buried",
       "minecraft:ore_copper",
-      "minecraft:underwater_magma",
-      "minecraft:ore_gold_extra"
+      "minecraft:underwater_magma"
     ],
     [],
     [
@@ -72,8 +71,6 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:forest_flowers",
-      "minecraft:patch_large_fern",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
       "minecraft:patch_sugar_cane",
@@ -98,44 +95,20 @@
     "axolotls": [],
     "creature": [
       {
+        "type": "minecraft:wolf",
+        "maxCount": 4,
+        "minCount": 4,
+        "weight": 5
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
         "type": "jalnyrsweaponary:knight",
         "maxCount": 5,
         "minCount": 3,
         "weight": 10
       },
-      {
-        "type": "minecraft:wolf",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 5
-      },
-      {
-        "type": "minecraft:sheep",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 12
-      },
-      {
-        "type": "minecraft:pig",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:chicken",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 10
-      },
-      {
-        "type": "minecraft:cow",
-        "maxCount": 4,
-        "minCount": 4,
-        "weight": 8
-      }
-    ],
-    "misc": [],
-    "monster": [
       {
         "type": "minecraft:spider",
         "maxCount": 4,
@@ -196,5 +169,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": 0.7
+  "temperature": 2.0
 }

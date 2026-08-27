@@ -35,7 +35,7 @@ public class ModDimensions {
                 OptionalLong.of(12000), // fixedTime
                 false, // hasSkylight
                 false, // hasCeiling
-                false, // ultraWarm
+                true, // ultraWarm
                 false, // natural
                 1.0, // coordinateScale
                 true, // bedWorks
@@ -55,13 +55,13 @@ public class ModDimensions {
         HolderGetter<NoiseGeneratorSettings> noiseGenSettings = context.lookup(Registries.NOISE_SETTINGS);
 
         NoiseBasedChunkGenerator wrappedChunkGenerator = new NoiseBasedChunkGenerator(
-                new FixedBiomeSource(biomeRegistry.getOrThrow(ModBiomes.SNOWY_BIOME)),
+                new FixedBiomeSource(biomeRegistry.getOrThrow(ModBiomes.DRIED_PLAINS)),
                 noiseGenSettings.getOrThrow(NoiseGeneratorSettings.OVERWORLD));
 
         NoiseBasedChunkGenerator noiseBasedChunkGenerator = new NoiseBasedChunkGenerator(
                 MultiNoiseBiomeSource.createFromList(
                         new Climate.ParameterList<>(List.of(Pair.of(
-                                        Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.SNOWY_BIOME)),
+                                        Climate.parameters(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(ModBiomes.DRIED_PLAINS)),
                                 Pair.of(
                                         Climate.parameters(0.1F, 0.2F, 0.0F, 0.2F, 0.0F, 0.0F, 0.0F), biomeRegistry.getOrThrow(Biomes.BIRCH_FOREST)),
                                 Pair.of(

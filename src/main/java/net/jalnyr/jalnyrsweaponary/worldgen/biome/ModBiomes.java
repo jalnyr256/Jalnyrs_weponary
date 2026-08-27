@@ -1,27 +1,24 @@
 package net.jalnyr.jalnyrsweaponary.worldgen.biome;
 
-import io.netty.bootstrap.Bootstrap;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
 import net.jalnyr.jalnyrsweaponary.worldgen.ModPlacedFeatures;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstapContext;
-import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.Musics;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
 public class ModBiomes {
-    public static final ResourceKey<Biome> SNOWY_BIOME = ResourceKey.create(Registries.BIOME,
-            new ResourceLocation(JalnyrsWeaponary.MOD_ID, "snowy_biome"));
+    public static final ResourceKey<Biome> DRIED_PLAINS = ResourceKey.create(Registries.BIOME,
+            new ResourceLocation(JalnyrsWeaponary.MOD_ID, "dried_plains"));
 
     public static void boostrap(BootstapContext<Biome> context) {
-        context.register(SNOWY_BIOME, snowyBiome(context));
+        context.register(DRIED_PLAINS, snowyBiome(context));
     }
 
     public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
@@ -35,11 +32,10 @@ public class ModBiomes {
 
     public static Biome snowyBiome(BootstapContext<Biome> context) {
         MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
-        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.KNIGHT.get(), 10, 3, 5));
+        spawnBuilder.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(ModEntities.KNIGHT.get(), 10, 3, 5));
 
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 4, 4));
 
-        BiomeDefaultFeatures.farmAnimals(spawnBuilder);
         BiomeDefaultFeatures.commonSpawns(spawnBuilder);
 
         BiomeGenerationSettings.Builder biomeBuilder =
@@ -47,10 +43,7 @@ public class ModBiomes {
         //we need to follow the same order as vanilla biomes for the BiomeDefaultFeatures
         globalOverworldGeneration(biomeBuilder);
         BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
-        BiomeDefaultFeatures.addForestFlowers(biomeBuilder);
-        BiomeDefaultFeatures.addFerns(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
-        BiomeDefaultFeatures.addExtraGold(biomeBuilder);
 
 
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
@@ -60,16 +53,16 @@ public class ModBiomes {
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(true)
                 .downfall(0.8f)
-                .temperature(0.7f)
+                .temperature(2f)
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColorOverride(0x7f03fc)
-                        .foliageColorOverride(0xd203fc)
-                        .fogColor(0x22a1e6)
+                        .waterColor(0x453600)
+                        .waterFogColor(0x115200)
+                        .skyColor(0xFFE38A)
+                        .grassColorOverride(0xFFE38A)
+                        .foliageColorOverride(0xFFE38A)
+                        .fogColor(0xFFF2C2)
                         .ambientMoodSound(AmbientMoodSettings.LEGACY_CAVE_SETTINGS).build())
                 .build();
     }

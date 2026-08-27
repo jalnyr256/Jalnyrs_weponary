@@ -278,8 +278,8 @@ public class EliteKnightModel extends HierarchicalModel<EliteKnightEntity>{
 
         this.animateWalk(EliteKnightAnimation.WALK, limbSwing, limbSwingAmount, 2f, 1.5f);
         this.animate(entity.getAnimationState("idle"), EliteKnightAnimation.IDLE, ageInTicks, 1f);
-        this.animate(entity.getAnimationState("attack"), EliteKnightAnimation.ATTACK, ageInTicks, 1f);
-        this.animate(entity.getAnimationState("attack2"), EliteKnightAnimation.ATTACK2, ageInTicks, 1f);
-        this.animate(entity.getAnimationState("attack3"), EliteKnightAnimation.ATTACK3, ageInTicks, 1f);
+        this.animate(entity.getAnimationState("attack"), EliteKnightAnimation.ATTACK, ageInTicks, 1.5f);
+        this.animate(entity.getAnimationState("attack2"), EliteKnightAnimation.ATTACK2, ageInTicks, 1.5f);
+        this.animate(entity.getAnimationState("attack3"), EliteKnightAnimation.ATTACK3, ageInTicks, 1.5f);
     }
 }

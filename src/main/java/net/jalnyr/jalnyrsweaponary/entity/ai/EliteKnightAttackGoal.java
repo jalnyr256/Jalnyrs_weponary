@@ -21,7 +21,7 @@ public class EliteKnightAttackGoal extends MeleeAttackGoal {
     private double pathedTargetY;
     private double pathedTargetZ;
     private int ticksUntilNextPathRecalculation;
-    private int ticksUntilNextAttack;
+    private int ticksUntilNextAttack = 80;
     private final int attackInterval = 40;
     private long lastCanUseCheck;
     private static final long COOLDOWN_BETWEEN_CAN_USE_CHECKS = 40L;
@@ -38,7 +38,7 @@ public class EliteKnightAttackGoal extends MeleeAttackGoal {
 
     public boolean canUse() {
         long i = this.mob.level().getGameTime();
-        if (i - this.lastCanUseCheck < 40L) {
+        if (i - this.lastCanUseCheck < 80L) {
             return false;
         } else {
             this.lastCanUseCheck = i;
@@ -159,7 +159,7 @@ public class EliteKnightAttackGoal extends MeleeAttackGoal {
     }
 
     protected void resetAttackCooldown() {
-        this.ticksUntilNextAttack = this.adjustedTickDelay(28);
+        this.ticksUntilNextAttack = this.adjustedTickDelay(25);
     }
 
     protected boolean isTimeToAttack() {

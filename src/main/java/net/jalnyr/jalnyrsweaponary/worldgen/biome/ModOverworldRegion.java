@@ -5,7 +5,6 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.biome.Climate;
 import terrablender.api.*;
 
@@ -31,7 +30,7 @@ public class ModOverworldRegion extends Region {
                 .erosion(ParameterUtils.Erosion.EROSION_0, ParameterUtils.Erosion.EROSION_1)
                 .depth(ParameterUtils.Depth.SURFACE, ParameterUtils.Depth.FLOOR)
                 .weirdness(ParameterUtils.Weirdness.MID_SLICE_NORMAL_ASCENDING, ParameterUtils.Weirdness.MID_SLICE_NORMAL_DESCENDING)
-                .build().forEach(point -> builder.add(point, ModBiomes.SNOWY_BIOME));
+                .build().forEach(point -> builder.add(point, ModBiomes.DRIED_PLAINS));
 
         // Add our points to the mapper
         builder.build().forEach(mapper);

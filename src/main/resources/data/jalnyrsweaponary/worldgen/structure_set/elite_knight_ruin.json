@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "jalnyrsweaponary:elite_knight_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 513980,
+
+    "spacing": 40,
+
+    "separation": 20,
+
+    "type": "minecraft:random_spread"
+  }
+}
