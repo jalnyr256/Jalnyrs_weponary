@@ -45,7 +45,6 @@ public class ModBiomes {
         BiomeDefaultFeatures.addMossyStoneBlock(biomeBuilder);
         BiomeDefaultFeatures.addDefaultOres(biomeBuilder);
 
-
         BiomeDefaultFeatures.addDefaultMushrooms(biomeBuilder);
         BiomeDefaultFeatures.addDefaultExtraVegetation(biomeBuilder);
         biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, ModPlacedFeatures.BURNED_PLACED_KEY);

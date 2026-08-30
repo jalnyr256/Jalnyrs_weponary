@@ -4,6 +4,7 @@ import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.block.custom.ModFlammableRotatedPillarBlock;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.block.custom.ModPortalBlock;
+import net.jalnyr.jalnyrsweaponary.fluid.ModFluids;
 import net.jalnyr.jalnyrsweaponary.worldgen.tree.BurnedTreeGrower;
 import net.jalnyr.jalnyrsweaponary.worldgen.tree.FrozenTreeGrower;
 import net.minecraft.core.BlockPos;
@@ -53,6 +54,10 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
     public static final RegistryObject<Block> DRIED_GRASS_BLOCK = registerBlock("dried_grass_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
+
+    public static final RegistryObject<LiquidBlock> ACID_FLUID_BLOCK = BLOCKS.register("acid_fluid_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_ACID, BlockBehaviour.Properties.copy(Blocks.LAVA).noLootTable()));
+
 
     public static final RegistryObject<Block> FROZEN_PLANKS = registerBlock("frozen_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {

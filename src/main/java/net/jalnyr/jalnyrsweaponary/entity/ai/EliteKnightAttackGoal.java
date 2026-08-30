@@ -159,7 +159,7 @@ public class EliteKnightAttackGoal extends MeleeAttackGoal {
     }
 
     protected void resetAttackCooldown() {
-        this.ticksUntilNextAttack = this.adjustedTickDelay(25);
+        this.ticksUntilNextAttack = this.adjustedTickDelay(22);
     }
 
     protected boolean isTimeToAttack() {

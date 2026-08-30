@@ -8,10 +8,14 @@ import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
 import net.jalnyr.jalnyrsweaponary.entity.client.EliteKnightRenderer;
 import net.jalnyr.jalnyrsweaponary.entity.client.KnightRenderer;
 import net.jalnyr.jalnyrsweaponary.entity.client.OldManRenderer;
+import net.jalnyr.jalnyrsweaponary.fluid.ModFluidTypes;
+import net.jalnyr.jalnyrsweaponary.fluid.ModFluids;
 import net.jalnyr.jalnyrsweaponary.loot.ModLootModifiers;
 import net.jalnyr.jalnyrsweaponary.worldgen.biome.ModTerrablender;
 import net.jalnyr.jalnyrsweaponary.worldgen.biome.surface.ModSurfaceRules;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -47,7 +51,8 @@ public class JalnyrsWeaponary
         modEventBus.addListener(this::commonSetup);
         ModEntities.register(modEventBus);
         ModTerrablender.registerBiomes();
-
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -87,6 +92,8 @@ public class JalnyrsWeaponary
             EntityRenderers.register(ModEntities.OLD_MAN.get(), OldManRenderer::new);
             EntityRenderers.register(ModEntities.KNIGHT.get(), KnightRenderer::new);
             EntityRenderers.register(ModEntities.ELITE_KNIGHT.get(), EliteKnightRenderer::new);
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ACID.get(), RenderType.translucent());
+            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ACID.get(), RenderType.translucent());
         }
     }
 }

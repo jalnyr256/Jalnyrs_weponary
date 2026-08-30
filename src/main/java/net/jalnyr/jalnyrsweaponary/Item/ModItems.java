@@ -3,9 +3,8 @@ package net.jalnyr.jalnyrsweaponary.Item;
 import net.jalnyr.jalnyrsweaponary.Item.custom.*;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
+import net.jalnyr.jalnyrsweaponary.fluid.ModFluids;
+import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -101,6 +100,10 @@ public class ModItems {
     public static final RegistryObject<Item> JURASSIC_BLADE = ITEMS.register("jurassic_blade",
             ()-> new SwordItem(ModToolTiers.SCALE, 14, -3F, new Item.Properties()));
 
+
+    public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
+            () -> new BucketItem(ModFluids.SOURCE_ACID,
+                    new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 
     public static final RegistryObject<Item> FIERY_GEMSTONE = ITEMS.register("fiery_gemstone",

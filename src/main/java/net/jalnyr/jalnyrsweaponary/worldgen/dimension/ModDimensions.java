@@ -1,5 +1,6 @@
 package net.jalnyr.jalnyrsweaponary.worldgen.dimension;
 
+import com.google.common.collect.ImmutableSet;
 import com.mojang.datafixers.util.Pair;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.worldgen.biome.ModBiomes;
@@ -17,11 +18,15 @@ import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.dimension.LevelStem;
 import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
 import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.Fluids;
 
 import java.util.List;
 import java.util.OptionalLong;
+import java.util.Set;
 
 public class ModDimensions {
+    static Set<Fluid> liquids = ImmutableSet.of(Fluids.WATER);
     public static final ResourceKey<LevelStem> FALLENDIM_KEY = ResourceKey.create(Registries.LEVEL_STEM,
             new ResourceLocation(JalnyrsWeaponary.MOD_ID, "fallendim"));
     public static final ResourceKey<Level> FALLENDIM_LEVEL_KEY = ResourceKey.create(Registries.DIMENSION,
@@ -33,6 +38,7 @@ public class ModDimensions {
     public static void bootstrapType(BootstapContext<DimensionType> context) {
         context.register(FALLEN_DIM_TYPE, new DimensionType(
                 OptionalLong.of(12000), // fixedTime
+
                 false, // hasSkylight
                 false, // hasCeiling
                 true, // ultraWarm
@@ -44,6 +50,7 @@ public class ModDimensions {
                 256, // height
                 256, // logicalHeight
                 BlockTags.INFINIBURN_OVERWORLD, // infiniburn
+
                 BuiltinDimensionTypes.OVERWORLD_EFFECTS, // effectsLocation
                 1.0f, // ambientLight
                 new DimensionType.MonsterSettings(false, false, ConstantInt.of(0), 0)));
