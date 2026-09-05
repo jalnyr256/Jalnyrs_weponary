@@ -1,6 +1,6 @@
-// 1.20.1	2026-08-26T15:48:38.648779049	Registries
+// 1.20.1	2026-09-05T10:32:39.598595692	Registries
 a2c4befd7e906d5463e08594ba3feb83e62fdd24 data/jalnyrsweaponary/dimension/fallendim.json
-9ebac6b4df4df7f79ad1565de96012289c93db8d data/jalnyrsweaponary/dimension_type/fallendim_type.json
+d12b94bcbf53dca58fbe70f5e091a9d8ada3229c data/jalnyrsweaponary/dimension_type/fallendim_type.json
 956fee0b41200c01596132ab32ec121bea250475 data/jalnyrsweaponary/forge/biome_modifier/add_flamemetal_ore.json
 767c7138da4c3c218d63782bac32c72bcd3a77d0 data/jalnyrsweaponary/forge/biome_modifier/add_froststeel_ore.json
 94beafc98ec50da4cba20f3f598bf4855f1a4a95 data/jalnyrsweaponary/forge/biome_modifier/add_tree_frozen.json

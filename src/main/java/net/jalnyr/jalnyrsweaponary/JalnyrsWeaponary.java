@@ -11,9 +11,7 @@ import net.jalnyr.jalnyrsweaponary.entity.client.OldManRenderer;
 import net.jalnyr.jalnyrsweaponary.fluid.ModFluidTypes;
 import net.jalnyr.jalnyrsweaponary.fluid.ModFluids;
 import net.jalnyr.jalnyrsweaponary.loot.ModLootModifiers;
-import net.jalnyr.jalnyrsweaponary.worldgen.biome.ModTerrablender;
 import net.jalnyr.jalnyrsweaponary.worldgen.biome.surface.ModSurfaceRules;
-import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -29,7 +27,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-import terrablender.api.SurfaceRuleManager;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(JalnyrsWeaponary.MOD_ID)
@@ -50,7 +47,6 @@ public class JalnyrsWeaponary
         ModLootModifiers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         ModEntities.register(modEventBus);
-        ModTerrablender.registerBiomes();
         ModFluidTypes.register(modEventBus);
         ModFluids.register(modEventBus);
 
@@ -65,10 +61,7 @@ public class JalnyrsWeaponary
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() -> {
 
-            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModSurfaceRules.makeRules());
-        });
     }
 
     // Add the example block item to the building blocks tab
