@@ -136,4 +136,9 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation("item/handheld")).texture("layer0",
                 new ResourceLocation(JalnyrsWeaponary.MOD_ID,"item/" + item.getId().getPath()));
     }
+    private ItemModelBuilder bowItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/bow")).texture("layer0",
+                new ResourceLocation(JalnyrsWeaponary.MOD_ID,"item/" + item.getId().getPath()));
+    }
 }

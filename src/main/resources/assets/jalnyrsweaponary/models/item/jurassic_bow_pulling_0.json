@@ -1,0 +1,6 @@
+{
+    "parent": "jalnyrsweaponary:item/jurassic_bow",
+    "textures": {
+        "layer0": "jalnyrsweaponary:item/jurassic_bow_pulling_0"
+    }
+}

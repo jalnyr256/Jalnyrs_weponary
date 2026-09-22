@@ -97,8 +97,14 @@ public class ModItems {
             ()-> new ArmorItem(ModArmorMaterials.TRIASSIC_SCALE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties()));
     public static final RegistryObject<Item> TRIASSIC_BLADE = ITEMS.register("triassic_blade",
             ()-> new SwordItem(ModToolTiers.SCALE, 13, -3F, new Item.Properties()));
+
+    public static final RegistryObject<Item> JURASSIC_BOW = ITEMS.register("jurassic_bow",
+            ()-> new JurassicBowItem(new Item.Properties()));
     public static final RegistryObject<Item> JURASSIC_BLADE = ITEMS.register("jurassic_blade",
             ()-> new SwordItem(ModToolTiers.SCALE, 14, -3F, new Item.Properties()));
+
+    public static final RegistryObject<Item> CRETACEOUS_DUAL_BLADE = ITEMS.register("cretaceous_dual_blade",
+            ()-> new SwordItem(ModToolTiers.SCALE, 15, -3F, new Item.Properties()));
 
 
     public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",

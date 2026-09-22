@@ -3,6 +3,7 @@ package net.jalnyr.jalnyrsweaponary.datagen;
 import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.JalnyrsWeaponary;
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
+import net.jalnyr.jalnyrsweaponary.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -51,6 +52,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.JURASSIC_BLADE.get(),
                         ModItems.ELITE_KNIGHT_SWORD.get(),
                         ModItems.TRIASSIC_BLADE.get());
+        this.tag(ItemTags.TOOLS)
+                .add(ModItems.JURASSIC_BOW.get());
         this.tag(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.TRIASSIC_SCALE.get(),
                         ModItems.SPEEDY_GEMSTONE.get(),
