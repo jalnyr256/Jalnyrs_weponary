@@ -53,6 +53,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
         basicItem(ModItems.KNIGHT_SMITHING_TEMPLATE.get());
         basicItem(ModItems.JURASSIC_LEAF.get());
+        basicItem(ModItems.CRETACEOUS_FRAGMENT.get());
+        basicItem(ModItems.CRETACEOUS_SMITHING_TEMPLATE.get());
         basicItem(ModItems.RAW_FROSTSTEEL.get());
         basicItem(ModItems.RAW_FLAMEMETAL.get());
         basicItem(ModItems.FROZEN_STICK.get());

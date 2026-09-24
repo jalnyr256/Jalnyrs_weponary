@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "jalnyrsweaponary:cretaceous_fragment"
+  },
+  "base": {
+    "item": "jalnyrsweaponary:jurassic_blade"
+  },
+  "result": {
+    "item": "jalnyrsweaponary:cretaceous_dual_blade"
+  },
+  "template": {
+    "item": "jalnyrsweaponary:cretaceous_smithing_template"
+  }
+}

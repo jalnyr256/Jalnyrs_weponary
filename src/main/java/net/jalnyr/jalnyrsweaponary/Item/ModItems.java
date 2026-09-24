@@ -33,7 +33,10 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> JURASSIC_SMITHING_TEMPLATE = ITEMS.register("jurassic_smithing_template",
             ()-> new Item(new Item.Properties()));
-
+    public static final RegistryObject<Item> CRETACEOUS_SMITHING_TEMPLATE = ITEMS.register("cretaceous_smithing_template",
+            ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRETACEOUS_FRAGMENT = ITEMS.register("cretaceous_fragment",
+            ()-> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FROSTSTEEL_SWORD = ITEMS.register("froststeel_sword",
             ()-> new FroststeelSwordItem(ModToolTiers.FROSTSTEEL, 5, -2.4F, new Item.Properties()));

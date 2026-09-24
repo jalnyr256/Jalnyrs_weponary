@@ -80,11 +80,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.JURASSIC_SMITHING_TEMPLATE.get());
                         pOutput.accept(ModItems.JURASSIC_BLADE.get());
                         pOutput.accept(ModItems.CRETACEOUS_DUAL_BLADE.get());
+                        pOutput.accept(ModItems.CRETACEOUS_FRAGMENT.get());
+                        pOutput.accept(ModItems.CRETACEOUS_SMITHING_TEMPLATE.get());
 
                         pOutput.accept(ModBlocks.DRIED_GRASS_BLOCK.get());
                         pOutput.accept(ModBlocks.BURNED_WOOD.get());
                         pOutput.accept(ModBlocks.BURNED_LOG.get());
-                        pOutput.accept(ModItems.ACID_BUCKET.get());
                     })
                     .build());
 

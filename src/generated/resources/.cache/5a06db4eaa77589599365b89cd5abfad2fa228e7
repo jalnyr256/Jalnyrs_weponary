@@ -1,6 +1,8 @@
-// 1.20.1	2026-09-09T15:25:41.356437452	Item Models: jalnyrsweaponary
+// 1.20.1	2026-09-24T20:54:46.422756581	Item Models: jalnyrsweaponary
 9fae90eed038214ed5f846e77f36196a61a5501d assets/jalnyrsweaponary/models/item/acid_bucket.json
 3fa5b7d7577cbec3bd7167ae4ed05fba56aa85de assets/jalnyrsweaponary/models/item/bloody_gemstone.json
+d13c00656d66fca98f7ba96096ac3d972cefc912 assets/jalnyrsweaponary/models/item/cretaceous_fragment.json
+df24214014097d4ff203acbc8e977b703660f952 assets/jalnyrsweaponary/models/item/cretaceous_smithing_template.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/jalnyrsweaponary/models/item/elite_knight_spawn_egg.json
 ffbe90c84700db8c52f3733b6cece54d30b8f5a2 assets/jalnyrsweaponary/models/item/fiery_gemstone.json
 fe904da028285d52931accd194ffcf56ae01d25a assets/jalnyrsweaponary/models/item/flamemetal_ingot.json

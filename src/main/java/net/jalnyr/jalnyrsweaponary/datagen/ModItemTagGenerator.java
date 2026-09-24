@@ -63,6 +63,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.JURASSIC_LEAF.get());
         this.tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.JURASSIC_SMITHING_TEMPLATE.get(),
+                        ModItems.CRETACEOUS_SMITHING_TEMPLATE.get(),
                         ModItems.KNIGHT_SMITHING_TEMPLATE.get());
     }
 }
