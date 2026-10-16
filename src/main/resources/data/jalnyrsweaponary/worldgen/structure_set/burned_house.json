@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "jalnyrsweaponary:burned_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 5131280,
+
+    "spacing": 40,
+
+    "separation": 20,
+
+    "type": "minecraft:random_spread"
+  }
+}

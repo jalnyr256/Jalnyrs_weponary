@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "jalnyrsweaponary:ruin1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 512134580,
+
+    "spacing": 40,
+
+    "separation": 20,
+
+    "type": "minecraft:random_spread"
+  }
+}
