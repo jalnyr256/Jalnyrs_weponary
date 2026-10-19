@@ -1,0 +1,26 @@
+{
+  "name": "jalnyrsweaponary:ruined_storage/start_pool",
+
+
+  "fallback": "minecraft:empty",
+
+
+  "elements": [
+    {
+
+      "weight": 1,
+      "element": {
+
+
+        "location": "jalnyrsweaponary:ruined_storage",
+
+
+        "processors": "minecraft:empty",
+
+
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

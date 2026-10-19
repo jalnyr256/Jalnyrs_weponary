@@ -8,7 +8,7 @@ import net.minecraft.world.level.levelgen.SurfaceRules;
 
 public class ModSurfaceRules {
     private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
-    private static final SurfaceRules.RuleSource GRASS_BLOCK = makeStateRule(ModBlocks.DRIED_GRASS_BLOCK.get());
+    private static final SurfaceRules.RuleSource DRIED_GRASS_BLOCK = makeStateRule(ModBlocks.DRIED_GRASS_BLOCK.get());
     private static final SurfaceRules.RuleSource FLAMEMETAL = makeStateRule(ModBlocks.FLAMEMETAl_ORE.get());
     private static final SurfaceRules.RuleSource FROSTSTEEL = makeStateRule(ModBlocks.FROSTSTEEL_ORE.get());
 
@@ -16,7 +16,7 @@ public class ModSurfaceRules {
     public static SurfaceRules.RuleSource makeRules() {
         SurfaceRules.ConditionSource isAtOrAboveWaterLevel = SurfaceRules.waterBlockCheck(-1, 0);
 
-        SurfaceRules.RuleSource grassSurface = SurfaceRules.sequence(SurfaceRules.ifTrue(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
+        SurfaceRules.RuleSource grassSurface = SurfaceRules.sequence(SurfaceRules.ifTrue(isAtOrAboveWaterLevel, DRIED_GRASS_BLOCK), DIRT);
 
 
         return SurfaceRules.sequence(

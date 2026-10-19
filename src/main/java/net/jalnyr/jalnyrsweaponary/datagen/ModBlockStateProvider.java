@@ -25,6 +25,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.FROSTSTEEL_ORE);
         blockWithItem(ModBlocks.FLAMEMETAl_ORE);
+        blockWithItem(ModBlocks.BURNED_CRATE);
         logBlock(((RotatedPillarBlock) ModBlocks.FROZEN_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.FROZEN_WOOD.get()), blockTexture(ModBlocks.FROZEN_LOG.get()), blockTexture(ModBlocks.FROZEN_LOG.get()));
         logBlock(((RotatedPillarBlock) ModBlocks.BURNED_LOG.get()));
@@ -39,6 +40,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.FROZEN_WOOD);
         blockItem(ModBlocks.BURNED_LOG);
         blockItem(ModBlocks.BURNED_WOOD);
+        blockItem(ModBlocks.BURNED_CRATE);
         blockItem(ModBlocks.STRIPPED_FROZEN_LOG);
         blockItem(ModBlocks.STRIPPED_FROZEN_WOOD);
         blockItem(ModBlocks.MOD_PORTAL);

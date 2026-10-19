@@ -30,6 +30,8 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> BURNED_LOG = registerBlock("burned_log",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+    public static final RegistryObject<Block> BURNED_CRATE = registerBlock("burned_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BARREL)));
     public static final RegistryObject<Block> BURNED_WOOD = registerBlock("burned_wood",
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
     public static final RegistryObject<Block> MOD_PORTAL = registerBlock("mod_portal",
