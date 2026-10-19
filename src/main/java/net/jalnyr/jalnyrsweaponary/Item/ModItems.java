@@ -71,6 +71,8 @@ public class ModItems {
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> KNIGHT_INGOT = ITEMS.register("knight_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BURNED_PORK = ITEMS.register("burned_pork",
+            ()-> new Item(new Item.Properties().food(ModFoods.BURNED_FOOD)));
 
     public static final RegistryObject<Item> FROSTY_KNIGHT_SWORD = ITEMS.register("frosty_knight_sword",
             ()-> new FrostyKnightSwordItem(ModToolTiers.KNIGHT, 1, -2.2F, new Item.Properties()));

@@ -86,6 +86,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DRIED_GRASS_BLOCK.get());
                         pOutput.accept(ModBlocks.BURNED_WOOD.get());
                         pOutput.accept(ModBlocks.BURNED_LOG.get());
+                        pOutput.accept(ModItems.BURNED_PORK.get());
                     })
                     .build());
 
