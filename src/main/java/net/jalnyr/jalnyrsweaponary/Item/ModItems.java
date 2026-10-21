@@ -117,6 +117,9 @@ public class ModItems {
                     new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1)));
 
 
+    public static  final RegistryObject<Item> MORO = ITEMS.register("moro",
+            ()-> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> FIERY_GEMSTONE = ITEMS.register("fiery_gemstone",
             ()-> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BLOODY_GEMSTONE = ITEMS.register("bloody_gemstone",
