@@ -66,6 +66,9 @@
   "item.jalnyrsweaponary.fiery_knight_sword": "Fiery Knight Sword",
   "item.jalnyrsweaponary.elite_knight_sword": "Elite Knight Sword",
 
+  "item.jalnyrsweaponary.valkyrie_mace": "Valkyrie Mace",
+  "item.jalnyrsweaponary.valkyrie_shard": "Valkyrie Shard",
+
   "item.jalnyrsweaponary.bloody_gemstone": "Bloody Gemstone",
   "item.jalnyrsweaponary.fiery_gemstone": "Fiery Gemstone",
   "item.jalnyrsweaponary.frosty_gemstone": "Frosty Gemstone",
@@ -85,6 +88,7 @@
   "message.jalnyrsweaponary.8.message": "Old Man: No one knows where you can find these gemstones but what we do know is that they are not easy to find.",
 
   "tooltip.jalnyrsweaponary.froststeel.tooltip": "§3Slows down targets",
+  "tooltip.jalnyrsweaponary.mace_tooltip": "§lMace of wonders",
   "tooltip.jalnyrsweaponary.flamemetal.tooltip": "§eInflicts targets on fire",
   "tooltip.jalnyrsweaponary.knight.tooltip": "§lSet effect: Makes you stronger while slowing you down",
   "tooltip.jalnyrsweaponary.knight_sword.tooltip": "§lA sword of a knight",

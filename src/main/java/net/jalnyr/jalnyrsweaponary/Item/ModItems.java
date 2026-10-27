@@ -111,6 +111,13 @@ public class ModItems {
     public static final RegistryObject<Item> CRETACEOUS_DUAL_BLADE = ITEMS.register("cretaceous_dual_blade",
             ()-> new SwordItem(ModToolTiers.SCALE, 15, -3F, new Item.Properties()));
 
+    public static final RegistryObject<Item> VALKYRIE_SHARD = ITEMS.register("valkyrie_shard",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> VALKYRIE_MACE = ITEMS.register("valkyrie_mace",
+            ()-> new MaceItem(ModToolTiers.VALKYRIE, 12, -2.7F, new Item.Properties()));
+
+
 
     public static final RegistryObject<Item> ACID_BUCKET = ITEMS.register("acid_bucket",
             () -> new BucketItem(ModFluids.SOURCE_ACID,

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "jalnyrsweaponary:item/valkyrie_mace2d"
+  }
+}

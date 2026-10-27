@@ -1,4 +1,4 @@
-// 1.20.1	2026-10-19T20:56:44.613726476	Item Models: jalnyrsweaponary
+// 1.20.1	2026-10-27T18:37:00.160911957	Item Models: jalnyrsweaponary
 9fae90eed038214ed5f846e77f36196a61a5501d assets/jalnyrsweaponary/models/item/acid_bucket.json
 3fa5b7d7577cbec3bd7167ae4ed05fba56aa85de assets/jalnyrsweaponary/models/item/bloody_gemstone.json
 d4d6b2f6dd629e1174bea5e9920b56c165cc07a1 assets/jalnyrsweaponary/models/item/burned_pork.json
@@ -117,3 +117,4 @@ e14f12d56ed1d7f7fd0fb12ae8ad413fab153430 assets/jalnyrsweaponary/models/item/tri
 34327893fcdbcbce15c210c8828d92407c24ad6f assets/jalnyrsweaponary/models/item/triassic_scale_leggings_netherite_trim.json
 92d4b4dfa99c38a8b600ecdb76374f0b74a3b40a assets/jalnyrsweaponary/models/item/triassic_scale_leggings_quartz_trim.json
 b756aceb00c888d62ecc67d8df19cb628bbc5067 assets/jalnyrsweaponary/models/item/triassic_scale_leggings_redstone_trim.json
+a193367cbe4a7bb0d46999bccac903bf61bbfd4b assets/jalnyrsweaponary/models/item/valkyrie_shard.json

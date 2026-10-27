@@ -69,6 +69,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.FROZEN_SAPLING.get());
                         pOutput.accept(ModBlocks.ANCIENT_STONE_BRICKS.get());
 
+                        pOutput.accept(ModItems.VALKYRIE_MACE.get());
+                        pOutput.accept(ModItems.VALKYRIE_SHARD.get());
+
                         pOutput.accept(ModItems.TRIASSIC_SCALE.get());
                         pOutput.accept(ModItems.TRIASSIC_SCALE_BOOTS.get());
                         pOutput.accept(ModItems.TRIASSIC_SCALE_LEGGINGS.get());
