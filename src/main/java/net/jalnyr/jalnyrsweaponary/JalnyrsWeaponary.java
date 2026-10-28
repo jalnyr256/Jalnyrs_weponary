@@ -6,6 +6,7 @@ import net.jalnyr.jalnyrsweaponary.Item.ModItems;
 import net.jalnyr.jalnyrsweaponary.block.ModBlocks;
 import net.jalnyr.jalnyrsweaponary.entity.ModEntities;
 import net.jalnyr.jalnyrsweaponary.entity.client.EliteKnightRenderer;
+import net.jalnyr.jalnyrsweaponary.entity.client.FallenTyrantRenderer;
 import net.jalnyr.jalnyrsweaponary.entity.client.KnightRenderer;
 import net.jalnyr.jalnyrsweaponary.entity.client.OldManRenderer;
 import net.jalnyr.jalnyrsweaponary.fluid.ModFluidTypes;
@@ -85,6 +86,7 @@ public class JalnyrsWeaponary
             EntityRenderers.register(ModEntities.OLD_MAN.get(), OldManRenderer::new);
             EntityRenderers.register(ModEntities.KNIGHT.get(), KnightRenderer::new);
             EntityRenderers.register(ModEntities.ELITE_KNIGHT.get(), EliteKnightRenderer::new);
+            EntityRenderers.register(ModEntities.FALLEN_TYRANT.get(), FallenTyrantRenderer::new);
             ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_ACID.get(), RenderType.translucent());
             ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_ACID.get(), RenderType.translucent());
         }
