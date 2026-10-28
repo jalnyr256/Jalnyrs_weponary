@@ -106,10 +106,10 @@ public class ModItems {
     public static final RegistryObject<Item> JURASSIC_BOW = ITEMS.register("jurassic_bow",
             ()-> new JurassicBowItem(new Item.Properties()));
     public static final RegistryObject<Item> JURASSIC_BLADE = ITEMS.register("jurassic_blade",
-            ()-> new SwordItem(ModToolTiers.SCALE, 14, -3F, new Item.Properties()));
+            ()-> new SwordItem(ModToolTiers.LEAF, 14, -3F, new Item.Properties()));
 
     public static final RegistryObject<Item> CRETACEOUS_DUAL_BLADE = ITEMS.register("cretaceous_dual_blade",
-            ()-> new SwordItem(ModToolTiers.SCALE, 15, -3F, new Item.Properties()));
+            ()-> new SwordItem(ModToolTiers.FRAGMENT, 15, -3F, new Item.Properties()));
 
     public static final RegistryObject<Item> VALKYRIE_SHARD = ITEMS.register("valkyrie_shard",
             ()-> new Item(new Item.Properties()));
